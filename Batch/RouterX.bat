@@ -1,7 +1,7 @@
 @echo on
 
 :start
-timeout 600
+timeout 300
 route delete 0.0.0.0
 timeout 1
 route add 172.20.155.0 mask 255.255.255.0 172.20.155.1 -p
