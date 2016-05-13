@@ -12,6 +12,15 @@ indata = in_file.read()
 
 print "The input file is %s bytes long" % len(indata)
 
-print "Does the output file exists?" % exists(to_file)
+print "Does the output file exists?%s" % exists(to_file)
 print "Ready? Hint <Enter> key continue, hint <CTRL+C> abort."
 
+raw_input()
+
+out_file = open(to_file, 'w')
+out_file.write(indata)
+
+print "Alright, all done."
+
+out_file.close()
+in_file.close()
