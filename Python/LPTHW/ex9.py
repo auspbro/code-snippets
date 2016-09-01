@@ -6,6 +6,12 @@ months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
 print "Here are the days: ", days
 print "Here are the months: ", months
 
+print "Here are the days: %s" % days
+print "Here are the months: %s" % months
+
+print "Here are the days: %r" % days
+print "Here are the months: %r" % months
+
 print """
 There are something going on here.
 With the three double qurotes.
