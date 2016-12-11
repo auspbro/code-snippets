@@ -1,3 +1,3 @@
 this is a test~
 
-hello, World
+#嗨翻c练习
