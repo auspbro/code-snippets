@@ -9,16 +9,17 @@
 # History:
 # 2016/12/13	Capt.	First release.
 ##################################################
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
+PATH = /usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
 export PATH
 ##################################################
 # Variables
 #
-user=$LOGNAME
-password="password"
-logdir="/home/diag/Desktop/Baffin_B-PROD_16-07-03_LINUX-64/"
-tmpmountpoint="/mnt/temp_mount"
-dstdir="/blah/backups/mysql_backups/"
+user = $LOGNAME
+password = "password"
+scriptdir = "/home/diag/Desktop/"
+logdir = "/home/diag/Desktop/Baffin_B-PROD_16-07-03_LINUX-64/"
+tmpmountpoint = "/mnt/temp_mount"
+dstdir = "/blah/backups/mysql_backups/"
 ##################################################
 # Usage Options
 
@@ -29,7 +30,11 @@ sudo bash ./Diag
 sleep 5
 
 grep -q "Total Fail:	0"  $logdir/log.txt
-
+if [ "$?" -eq "0" ]; then
+	sudo bash $scriptdir/switch2win.sh
+else
+	echo "Please call 911..."
+fi
 
 exit 0
 
