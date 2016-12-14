@@ -14,12 +14,12 @@ export PATH
 ##################################################
 # Variables
 #
-user = $LOGNAME
-password = "password"
-scriptdir = "/home/diag/Desktop/"
-logdir = "/home/diag/Desktop/Baffin_B-PROD_16-07-03_LINUX-64/"
-tmpmountpoint = "/mnt/temp_mount"
-dstdir = "/blah/backups/mysql_backups/"
+user=$LOGNAME
+password="password"
+scriptdir="/home/diag/Desktop/"
+logdir="/home/diag/Desktop/Baffin_B-PROD_16-07-03_LINUX-64/"
+tmpmountpoint="/mnt/temp_mount"
+dstdir="/blah/backups/mysql_backups/"
 ##################################################
 # Usage Options
 
