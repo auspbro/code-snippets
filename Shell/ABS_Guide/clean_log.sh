@@ -17,7 +17,10 @@ export PATH
 user=$LOGNAME
 password="password"
 scriptdir="/home/diag/Desktop/"
-logdir="/home/diag/Desktop/Baffin_BD-PROD_16-07-03_LINUX-64/"
+LOGDIR=/var/log
+ROOT_UID=0		# $UID为0的时候，用户才具有根权限
+LINES=50		# 默认保存行数
+
 tmpmountpoint="/mnt/temp_mount"
 dstdir="/blah/backups/mysql_backups/"
 ##################################################
@@ -29,3 +32,4 @@ cd /var/log
 cat /dev/null > message
 cat /dev/null > wtmp
 echo "Logs cleaned up..."
+exit
