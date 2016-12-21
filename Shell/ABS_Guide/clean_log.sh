@@ -35,14 +35,14 @@ if [ "$UID" -ne "$ROOT_UID" ]; then
 	exit $E_NOTROOT
 fi
 
-if [[ -n "$1" ]]; then
+if [ -n "$1" ]; then
 	lines=$1
 else
 	lines=$LINES 	# 		
 fi
 
 cd $LOG_DIR
-if [[ `pwd` != "$LOG_DIR" ]]; then
+if [ `pwd` != "$LOG_DIR" ]; then
 	echo "Can't change to $LOG_DIR."
 	exit $E_XCD
 fi
