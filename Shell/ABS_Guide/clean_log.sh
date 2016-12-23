@@ -9,7 +9,7 @@
 # History:
 # 2016/12/20	Capt.	First release.
 ##################################################
-PATH = /usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
 export PATH
 ##################################################
 # Variables
