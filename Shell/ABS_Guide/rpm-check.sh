@@ -23,7 +23,7 @@ fi
 	echo
 	rpm -i --test $1	#查询rpm包是否可以安装
 
-	if [[ "$?" -eq $SUCCESS ]]; then
+	if [ "$?" -eq $SUCCESS ]; then
 		echo "$1 can be install"
 	else
 		echo "$1 can not be install"
