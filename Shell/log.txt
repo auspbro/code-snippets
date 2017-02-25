@@ -1,0 +1,902 @@
+<17:12:41> <common> <Wrapper>: CMD001:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+./agt  -ppmode=perf  -ppmempct=2 -i=PCI:0000:03:00.0
+./agt   -ppsclkoffsetpct=2 -i=PCI:0000:03:00.0
+<17:12:44> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:44> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:12:44> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:44> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:12:44> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:44> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:12:44> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:12:44> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>: SMC ucode version : 00.00.00 (0x000000)
+<17:12:44> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:44> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>:     PowerPlay mode name "perf" mapped to numeric mode = 1
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>:     PowerPlay mode set to mode = 1
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>: Mode = 1 : PERFORMANCE_MODE : DISALLOW_ON_DC
+<17:12:44> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:12:44> <common> <Wrapper>: HIGH: ENG = 1053 MHz, MEM = 1530 MHz
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:12:44> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:44> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:44> <common> <Wrapper>: 
+<17:12:44> <common> <Wrapper>:     SCLK offset ( 2.00%) applied successfully.
+<17:12:44> <common> <Wrapper>: CMD002:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:12:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:46> <common> <Wrapper>: 
+<17:12:46> <common> <Wrapper>:     Successfully restored DPM.
+<17:12:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:46> <common> <Wrapper>: 
+<17:12:46> <common> <Wrapper>:     Successfully restored DPM.
+<17:12:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:46> <common> <Wrapper>: 
+<17:12:46> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:12:46> <common> <Wrapper>: 
+<17:12:46> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:12:46> <common> <Wrapper>: 
+<17:12:46> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:12:46> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:12:46> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:12:46> <common> <Wrapper>: 
+<17:12:46> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:12:46> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:12:46> <common> <Wrapper>: 
+<17:12:46> <common> <Wrapper>: CMD003:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+./agt  -ppmode=perf  -ppmempct=2 -i=PCI:0000:03:00.0
+./agt   -ppsclkoffsetpct=2 -i=PCI:0000:03:00.0
+<17:12:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:12:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:12:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:12:48> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:12:48> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:12:48> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>:     PowerPlay mode name "perf" mapped to numeric mode = 1
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>:     PowerPlay mode set to mode = 1
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>: Mode = 1 : PERFORMANCE_MODE : DISALLOW_ON_DC
+<17:12:48> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:12:48> <common> <Wrapper>: HIGH: ENG = 1053 MHz, MEM = 1530 MHz
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:12:48> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:48> <common> <Wrapper>: 
+<17:12:48> <common> <Wrapper>:     SCLK offset ( 2.00%) applied successfully.
+<17:12:48> <common> <Wrapper>: CMD004:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:12:49> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:49> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:49> <common> <Wrapper>: 
+<17:12:49> <common> <Wrapper>:     Successfully restored DPM.
+<17:12:49> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:49> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:49> <common> <Wrapper>: 
+<17:12:49> <common> <Wrapper>:     Successfully restored DPM.
+<17:12:49> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:49> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:49> <common> <Wrapper>: 
+<17:12:49> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:12:49> <common> <Wrapper>: 
+<17:12:49> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:12:49> <common> <Wrapper>: 
+<17:12:49> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:12:49> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:12:49> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:12:49> <common> <Wrapper>: 
+<17:12:49> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:12:49> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:12:49> <common> <Wrapper>: 
+<17:12:49> <common> <Wrapper>: CMD005:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+./agt  -ppmode=perf  -ppmempct=2 -i=PCI:0000:03:00.0
+./agt   -ppsclkoffsetpct=2 -i=PCI:0000:03:00.0
+<17:12:51> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:51> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:12:51> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:51> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:12:51> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:51> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:12:51> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:12:51> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:12:51> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:51> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>:     PowerPlay mode name "perf" mapped to numeric mode = 1
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>:     PowerPlay mode set to mode = 1
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>: Mode = 1 : PERFORMANCE_MODE : DISALLOW_ON_DC
+<17:12:51> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:12:51> <common> <Wrapper>: HIGH: ENG = 1053 MHz, MEM = 1530 MHz
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:12:51> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:51> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:51> <common> <Wrapper>: 
+<17:12:51> <common> <Wrapper>:     SCLK offset ( 2.00%) applied successfully.
+<17:12:51> <common> <Wrapper>: CMD006:./agt -fancontrol=1 -i=PCI:0000:03:00.0
+<17:12:52> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:52> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:52> <common> <Wrapper>: 
+<17:12:52> <common> <Wrapper>:     Fan Speed Level           : High
+<17:12:52> <common> <Wrapper>: CMD007:./agt -switchmclkinvblank=off -i=PCI:0000:03:00.0
+<17:12:52> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:12:52> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:12:52> <common> <Wrapper>: 
+<17:12:53> <common> <Wrapper>: ./tserverlite -autodpmtog=sclk,mclk,30,0 -pm_enable_logging=0 -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:13:10.989593> <status> <Framework>: STD004.001   [2] Pass    15532 msecs.
+<17:13:36.878287> <status> <Framework>: AK321.005    [2] Pass    25870 msecs.
+<17:13:37> <common> <Wrapper>: CMD008:./agt -switchmclkinvblank=on -i=PCI:0000:03:00.0
+<17:13:37> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:37> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:37> <common> <Wrapper>: 
+<17:13:37> <common> <Wrapper>: CMD009:./agt -fancontrol=2 -i=PCI:0000:03:00.0
+<17:13:39> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:39> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:39> <common> <Wrapper>: 
+<17:13:39> <common> <Wrapper>:     Fan Speed Level           : AUTO
+<17:13:39> <common> <Wrapper>: CMD010:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:13:40> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:40> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:40> <common> <Wrapper>: 
+<17:13:40> <common> <Wrapper>:     Successfully restored DPM.
+<17:13:40> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:40> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:40> <common> <Wrapper>: 
+<17:13:40> <common> <Wrapper>:     Successfully restored DPM.
+<17:13:40> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:40> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:40> <common> <Wrapper>: 
+<17:13:40> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:13:40> <common> <Wrapper>: 
+<17:13:40> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:13:40> <common> <Wrapper>: 
+<17:13:40> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:13:40> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:13:40> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:13:40> <common> <Wrapper>: 
+<17:13:40> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:13:40> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:13:40> <common> <Wrapper>: 
+<17:13:40> <common> <Wrapper>: CMD011:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:13:41> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:41> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:41> <common> <Wrapper>: 
+<17:13:41> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:13:41> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:41> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:41> <common> <Wrapper>: 
+<17:13:41> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:13:41> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:41> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:41> <common> <Wrapper>: 
+<17:13:41> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:13:41> <common> <Wrapper>: 
+<17:13:41> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:13:41> <common> <Wrapper>: 
+<17:13:41> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:13:41> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:13:41> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:13:41> <common> <Wrapper>: 
+<17:13:41> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:13:41> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:13:41> <common> <Wrapper>: 
+<17:13:41> <common> <Wrapper>: CMD012:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+./agt  -ppmode=perf  -ppmempct=2 -i=PCI:0000:03:00.0
+./agt   -ppsclkoffsetpct=2 -i=PCI:0000:03:00.0
+<17:13:43> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:43> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:13:43> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:43> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:13:43> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:43> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:13:43> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:13:43> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:13:43> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:43> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>:     PowerPlay mode name "perf" mapped to numeric mode = 1
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>:     PowerPlay mode set to mode = 1
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>: Mode = 1 : PERFORMANCE_MODE : DISALLOW_ON_DC
+<17:13:43> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:13:43> <common> <Wrapper>: HIGH: ENG = 1053 MHz, MEM = 1530 MHz
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:13:43> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:13:43> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:13:43> <common> <Wrapper>: 
+<17:13:43> <common> <Wrapper>:     SCLK offset ( 2.00%) applied successfully.
+<17:13:43> <common> <Wrapper>: ./tserverlite -power_tune -power_tune_log_config=all -report_power_tune_error=1 -power_tune_sample_period=50 -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:14:13.391981> <status> <Framework>: STD004.002   [2] Pass    27987 msecs.
+<17:14:25.003613> <status> <Framework>: STD003.001   [2] Pass    11601 msecs.
+<17:14:38.304234> <status> <Framework>: STD002.001   [2] Pass    13294 msecs.
+<17:14:44.035819> <status> <Framework>: STD001.001   [2] Pass    5723 msecs.
+<17:14:44> <common> <Wrapper>: CMD013:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:14:45> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:45> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:45> <common> <Wrapper>: 
+<17:14:45> <common> <Wrapper>:     Successfully restored DPM.
+<17:14:45> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:45> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:45> <common> <Wrapper>: 
+<17:14:45> <common> <Wrapper>:     Successfully restored DPM.
+<17:14:45> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:45> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:45> <common> <Wrapper>: 
+<17:14:45> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:14:45> <common> <Wrapper>: 
+<17:14:45> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:14:45> <common> <Wrapper>: 
+<17:14:45> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:14:45> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:14:45> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:14:45> <common> <Wrapper>: 
+<17:14:45> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:14:45> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:14:45> <common> <Wrapper>: 
+<17:14:45> <common> <Wrapper>: CMD014:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:14:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:46> <common> <Wrapper>: 
+<17:14:46> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:14:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:46> <common> <Wrapper>: 
+<17:14:46> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:14:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:46> <common> <Wrapper>: 
+<17:14:46> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:14:46> <common> <Wrapper>: 
+<17:14:46> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:14:46> <common> <Wrapper>: 
+<17:14:46> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:14:46> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:14:46> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:14:46> <common> <Wrapper>: 
+<17:14:46> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:14:46> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:14:46> <common> <Wrapper>: 
+<17:14:46> <common> <Wrapper>: CMD015:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+./agt  -ppmode=perf  -ppmempct=2 -i=PCI:0000:03:00.0
+./agt   -ppsclkoffsetpct=2 -i=PCI:0000:03:00.0
+<17:14:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:14:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:14:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:14:48> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:14:48> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:14:48> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>:     PowerPlay mode name "perf" mapped to numeric mode = 1
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>:     PowerPlay mode set to mode = 1
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>: Mode = 1 : PERFORMANCE_MODE : DISALLOW_ON_DC
+<17:14:48> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:14:48> <common> <Wrapper>: HIGH: ENG = 1053 MHz, MEM = 1530 MHz
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:14:48> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:14:48> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:14:48> <common> <Wrapper>: 
+<17:14:48> <common> <Wrapper>:     SCLK offset ( 2.00%) applied successfully.
+<17:14:48> <common> <Wrapper>: ./tserverlite -power_tune -power_tune_log_config=all -report_power_tune_error=1 -power_tune_sample_period=50 -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:15:20.537478> <status> <Framework>: STD005.003   [2] Pass    30168 msecs.
+<17:15:20> <common> <Wrapper>: CMD016:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:15:22> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:22> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:22> <common> <Wrapper>: 
+<17:15:22> <common> <Wrapper>:     Successfully restored DPM.
+<17:15:22> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:22> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:22> <common> <Wrapper>: 
+<17:15:22> <common> <Wrapper>:     Successfully restored DPM.
+<17:15:22> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:22> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:22> <common> <Wrapper>: 
+<17:15:22> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:15:22> <common> <Wrapper>: 
+<17:15:22> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:15:22> <common> <Wrapper>: 
+<17:15:22> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:15:22> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:15:22> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:15:22> <common> <Wrapper>: 
+<17:15:22> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:15:22> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:15:22> <common> <Wrapper>: 
+<17:15:22> <common> <Wrapper>: CMD017:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:15:23> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:23> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:23> <common> <Wrapper>: 
+<17:15:23> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:15:23> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:23> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:23> <common> <Wrapper>: 
+<17:15:23> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:15:23> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:23> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:23> <common> <Wrapper>: 
+<17:15:23> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:15:23> <common> <Wrapper>: 
+<17:15:23> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:15:23> <common> <Wrapper>: 
+<17:15:23> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:15:23> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:15:23> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:15:23> <common> <Wrapper>: 
+<17:15:23> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:15:23> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:15:23> <common> <Wrapper>: 
+<17:15:23> <common> <Wrapper>: CMD018:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+./agt  -ppmode=perf  -ppmempct=2 -i=PCI:0000:03:00.0
+./agt   -ppsclkoffsetpct=2 -i=PCI:0000:03:00.0
+<17:15:25> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:25> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:15:25> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:25> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:15:25> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:25> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:15:25> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:15:25> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:15:25> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:25> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>:     PowerPlay mode name "perf" mapped to numeric mode = 1
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>:     PowerPlay mode set to mode = 1
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>: Mode = 1 : PERFORMANCE_MODE : DISALLOW_ON_DC
+<17:15:25> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:15:25> <common> <Wrapper>: HIGH: ENG = 1053 MHz, MEM = 1530 MHz
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:15:25> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:15:25> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:15:25> <common> <Wrapper>: 
+<17:15:25> <common> <Wrapper>:     SCLK offset ( 2.00%) applied successfully.
+<17:15:25> <common> <Wrapper>: ./tserverlite -cf=gpu/pm4play.cf -power_tune -power_tune_log_config=all -report_power_tune_error=1 -power_tune_sample_period=50 -cf=tserver.cf -pm4file=gpu/pm4play/pk006031 -d=2 -tf=tserver.tmp.tf
+<17:15:48.912002> <status> <Framework>: PK006.031    [2] Pass    21392 msecs.
+<17:15:49> <common> <Wrapper>: ./tserverlite -cf=gpu/pm4play.cf -power_tune -power_tune_log_config=all -report_power_tune_error=1 -power_tune_sample_period=50 -cf=tserver.cf -pm4file=gpu/pm4play/pk016031 -d=2 -tf=tserver.tmp.tf
+<17:16:13.908929> <status> <Framework>: PK016.031    [2] Pass    22504 msecs.
+<17:16:14> <common> <Wrapper>: CMD019:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:16:15> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:15> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:15> <common> <Wrapper>: 
+<17:16:15> <common> <Wrapper>:     Successfully restored DPM.
+<17:16:15> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:15> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:15> <common> <Wrapper>: 
+<17:16:15> <common> <Wrapper>:     Successfully restored DPM.
+<17:16:15> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:15> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:15> <common> <Wrapper>: 
+<17:16:15> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:16:15> <common> <Wrapper>: 
+<17:16:15> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:16:15> <common> <Wrapper>: 
+<17:16:15> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:16:15> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:16:15> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:16:15> <common> <Wrapper>: 
+<17:16:15> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:16:15> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:16:15> <common> <Wrapper>: 
+<17:16:15> <common> <Wrapper>: CMD020:./agt -rcgen3strap=1 -i=PCI:0000:03:00.0
+<17:16:16> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:16> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:16> <common> <Wrapper>: 
+<17:16:16> <common> <Wrapper>:     PCIE RC Gen3 enable strap change successful
+<17:16:16> <common> <Wrapper>: CMD021:./agt -pcielinkspeed=3 -forceRCmaxtargetlinkspeed -i=PCI:0000:03:00.0
+<17:16:16> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:16> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:16> <common> <Wrapper>: 
+<17:16:16> <common> <Wrapper>:     PCIE Link Speed change successful, new link speed = GEN3
+<17:16:16> <common> <Wrapper>: CMD022:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:16:17> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:17> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:17> <common> <Wrapper>: 
+<17:16:17> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:16:17> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:17> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:17> <common> <Wrapper>: 
+<17:16:17> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:16:17> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:17> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:17> <common> <Wrapper>: 
+<17:16:17> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:16:17> <common> <Wrapper>: 
+<17:16:17> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:16:17> <common> <Wrapper>: 
+<17:16:17> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:16:17> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:16:17> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:16:17> <common> <Wrapper>: 
+<17:16:17> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:16:17> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:16:17> <common> <Wrapper>: 
+<17:16:17> <common> <Wrapper>: CMD023:./agt -aspm=off -i=PCI:0000:03:00.0
+<17:16:17> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:17> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:17> <common> <Wrapper>: 
+<17:16:17> <common> <Wrapper>:     PCIE ASPM status change successful
+<17:16:17> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:16:19.827076> <status> <Framework>: AJ020.001    [2] Pass    76 msecs.
+<17:16:19.989504> <status> <Framework>: AJ020.002    [2] Pass    78 msecs.
+<17:16:20.170261> <status> <Framework>: AJ020.003    [2] Pass    85 msecs.
+<17:16:20.342816> <status> <Framework>: AJ020.004    [2] Pass    85 msecs.
+<17:16:20.519699> <status> <Framework>: AJ020.005    [2] Pass    85 msecs.
+<17:16:20.682280> <status> <Framework>: AJ020.006    [2] Pass    70 msecs.
+<17:16:20.844321> <status> <Framework>: AJ020.007    [2] Pass    75 msecs.
+<17:16:21.001444> <status> <Framework>: AJ020.008    [2] Pass    71 msecs.
+<17:16:21.157158> <status> <Framework>: AJ020.009    [2] Pass    71 msecs.
+<17:16:21> <common> <Wrapper>: CMD024:./agt -aspm=L1 -i=PCI:0000:03:00.0
+<17:16:21> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:21> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:21> <common> <Wrapper>: 
+<17:16:21> <common> <Wrapper>:     PCIE ASPM status change successful
+<17:16:21> <common> <Wrapper>: CMD025:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:16:22> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:22> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:22> <common> <Wrapper>: 
+<17:16:22> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:16:22> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:22> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:22> <common> <Wrapper>: 
+<17:16:22> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:16:22> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:22> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:22> <common> <Wrapper>: 
+<17:16:22> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:16:22> <common> <Wrapper>: 
+<17:16:22> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:16:22> <common> <Wrapper>: 
+<17:16:22> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:16:22> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:16:22> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:16:22> <common> <Wrapper>: 
+<17:16:22> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:16:22> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:16:22> <common> <Wrapper>: 
+<17:16:22> <common> <Wrapper>: CMD026:./agt -aspm=off -i=PCI:0000:03:00.0
+<17:16:22> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:22> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:22> <common> <Wrapper>: 
+<17:16:22> <common> <Wrapper>:     PCIE ASPM status change successful
+<17:16:22> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:16:24.562655> <status> <Framework>: AJ015.001    [2] Pass    89 msecs.
+<17:16:24.737123> <status> <Framework>: AJ015.002    [2] Pass    90 msecs.
+<17:16:24.916603> <status> <Framework>: AJ015.003    [2] Pass    90 msecs.
+<17:16:25.096180> <status> <Framework>: AJ015.004    [2] Pass    90 msecs.
+<17:16:25.269163> <status> <Framework>: AJ015.005    [2] Pass    81 msecs.
+<17:16:25.444884> <status> <Framework>: AJ015.006    [2] Pass    81 msecs.
+<17:16:25> <common> <Wrapper>: CMD027:./agt -aspm=L1 -i=PCI:0000:03:00.0
+<17:16:25> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:25> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:25> <common> <Wrapper>: 
+<17:16:25> <common> <Wrapper>:     PCIE ASPM status change successful
+<17:16:25> <common> <Wrapper>: CMD028:./agt -aspm=off -i=PCI:0000:03:00.0
+<17:16:25> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:25> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:25> <common> <Wrapper>: 
+<17:16:25> <common> <Wrapper>:     PCIE ASPM status change successful
+<17:16:25> <common> <Wrapper>: ./tserverlite -linkwidth=8 -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:16:27.512699> <status> <Framework>: AG020.008    [2] Pass    17 msecs.
+<17:16:27.616940> <status> <Framework>: AG020.010    [2] Pass    21 msecs.
+<17:16:27> <common> <Wrapper>: CMD029:./agt -aspm=L1 -i=PCI:0000:03:00.0
+<17:16:27> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:27> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:27> <common> <Wrapper>: 
+<17:16:27> <common> <Wrapper>:     PCIE ASPM status change successful
+<17:16:27> <common> <Wrapper>: CMD030:./agt -aspm=off -i=PCI:0000:03:00.0
+<17:16:27> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:27> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:27> <common> <Wrapper>: 
+<17:16:27> <common> <Wrapper>:     PCIE ASPM status change successful
+<17:16:28> <common> <Wrapper>: ./tserverlite -linkwidth=8 -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:16:29.747192> <status> <Framework>: AG020.003    [2] Pass    16 msecs.
+<17:16:29.851179> <status> <Framework>: AG020.005    [2] Pass    20 msecs.
+<17:16:30> <common> <Wrapper>: ./tserverlite -vm -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:16:57.181150> <status> <Framework>: AK751.406    [2] Pass    25460 msecs.
+<17:16:57> <common> <Wrapper>: ./tserverlite -linkwidth=8 -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:16:59.199461> <status> <Framework>: AG020.004    [2] Pass    26 msecs.
+<17:16:59.377301> <status> <Framework>: AG020.006    [2] Pass    51 msecs.
+<17:16:59> <common> <Wrapper>: CMD031:./agt -aspm=L1 -i=PCI:0000:03:00.0
+<17:16:59> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:16:59> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:16:59> <common> <Wrapper>: 
+<17:16:59> <common> <Wrapper>:     PCIE ASPM status change successful
+<17:16:59> <common> <Wrapper>: CMD032:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+./agt  -ppmode=perf  -ppmempct=2 -i=PCI:0000:03:00.0
+./agt   -ppsclkoffsetpct=2 -i=PCI:0000:03:00.0
+<17:17:01> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:17:01> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:17:01> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:17:01> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>:     Restoring DPM in boot mode, when sclk dpm is not enabled is not supported.
+<17:17:01> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:17:01> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:17:01> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:17:01> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:17:01> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:17:01> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>:     PowerPlay mode name "perf" mapped to numeric mode = 1
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>:     PowerPlay mode set to mode = 1
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>: Mode = 1 : PERFORMANCE_MODE : DISALLOW_ON_DC
+<17:17:01> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:17:01> <common> <Wrapper>: HIGH: ENG = 1053 MHz, MEM = 1530 MHz
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:17:01> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:17:01> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:17:01> <common> <Wrapper>: 
+<17:17:01> <common> <Wrapper>:     SCLK offset ( 2.00%) applied successfully.
+<17:17:01> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:17:03.526005> <status> <Framework>: SDMA006.001  [2] Pass    28 msecs.
+<17:17:48.807565> <status> <Framework>: AK401.001    [2] Pass    45278 msecs.
+<17:18:25.531185> <status> <Framework>: AK403.001    [2] Pass    36720 msecs.
+<17:18:39.362154> <status> <Framework>: AK010.001    [2] Pass    13828 msecs.
+<17:18:49.084815> <status> <Framework>: AK311.007    [2] Pass    9719 msecs.
+<17:18:53.623649> <status> <Framework>: AK308.006    [2] Pass    4534 msecs.
+<17:19:05.304277> <status> <Framework>: AK312.006    [2] Pass    11678 msecs.
+<17:19:25.286115> <status> <Framework>: AK321.006    [2] Pass    19978 msecs.
+<17:19:52.190958> <status> <Framework>: AK404.001    [2] Pass    26900 msecs.
+<17:19:52> <common> <Wrapper>: CMD033:./agt -samclk=400 -i=PCI:0000:03:00.0
+<17:19:52> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:19:52> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:19:52> <common> <Wrapper>: 
+<17:19:52> <common> <Wrapper>:     Current  SAMUCLK         : 400.00 MHz
+<17:19:52> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:19:54.578968> <status> <Framework>: SAM001.009   [2] Pass    135 msecs.
+<17:19:59.373579> <status> <Framework>: SAM001.010   [2] Pass    4791 msecs.
+<17:20:01.175338> <status> <Framework>: SAM007.003   [2] Pass    1798 msecs.
+<17:20:01.263240> <status> <Framework>: SAM008.011   [2] Pass    85 msecs.
+<17:20:01.350384> <status> <Framework>: SAM008.012   [2] Pass    85 msecs.
+<17:20:01.409255> <status> <Framework>: SAM009.001   [2] Pass    57 msecs.
+<17:20:01.460045> <status> <Framework>: SAM009.006   [2] Pass    49 msecs.
+<17:20:01.522831> <status> <Framework>: SAM010.003   [2] Pass    61 msecs.
+<17:20:01.617736> <status> <Framework>: SAM010.004   [2] Pass    93 msecs.
+<17:20:01> <common> <Wrapper>: CMD034:./agt -eclk=600 -i=PCI:0000:03:00.0
+<17:20:02> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:20:02> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:20:02> <common> <Wrapper>: 
+<17:20:02> <common> <Wrapper>:     Current     ECLK         : 600.00 MHz
+<17:20:02> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:20:05.654325> <status> <Framework>: VCE100.009   [2] Pass    1773 msecs.
+<17:20:05> <common> <Wrapper>: CMD035:./agt -eclk=600 -i=PCI:0000:03:00.0
+<17:20:06> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:20:06> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:20:06> <common> <Wrapper>: 
+<17:20:06> <common> <Wrapper>:     Current     ECLK         : 600.00 MHz
+<17:20:06> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:20:10.116769> <status> <Framework>: VCE402.010   [2] Pass    2218 msecs.
+<17:20:10> <common> <Wrapper>: CMD036:./agt -vclk=650 -dclk=500 -i=PCI:0000:03:00.0
+<17:20:10> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:20:10> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:20:10> <common> <Wrapper>: 
+<17:20:10> <common> <Wrapper>:     Current     DCLK         : 496.55 MHz
+<17:20:10> <common> <Wrapper>:     Current     VCLK         : 626.08 MHz
+<17:20:10> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:20:14.193226> <status> <Framework>: VCE601.008   [2] Pass    1986 msecs.
+<17:20:21.820216> <status> <Framework>: VCE601.010   [2] Pass    7624 msecs.
+<17:20:28.583847> <status> <Framework>: VCE605.005   [2] Pass    6759 msecs.
+<17:20:28.617481> <status> <Framework>: UVD002.006   [2] Pass    30 msecs.
+<17:20:28> <common> <Wrapper>: CMD037:./agt -vclk=540 -dclk=400 -i=PCI:0000:03:00.0
+<17:20:29> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:20:29> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:20:29> <common> <Wrapper>: 
+<17:20:29> <common> <Wrapper>:     Current     DCLK         : 400.00 MHz
+<17:20:29> <common> <Wrapper>:     Current     VCLK         : 533.33 MHz
+<17:20:29> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:20:32.322347> <status> <Framework>: UVD011.001   [2] Pass    1444 msecs.
+<17:20:33.704477> <status> <Framework>: UVD011.002   [2] Pass    1379 msecs.
+<17:20:35.044915> <status> <Framework>: UVD011.003   [2] Pass    1334 msecs.
+<17:20:36.467737> <status> <Framework>: UVD011.004   [2] Pass    1419 msecs.
+<17:20:37.547754> <status> <Framework>: UVD014.001   [2] Pass    1076 msecs.
+<17:20:38.733904> <status> <Framework>: UVD014.002   [2] Pass    1182 msecs.
+<17:20:39.809635> <status> <Framework>: UVD014.003   [2] Pass    1054 msecs.
+<17:20:40.877177> <status> <Framework>: UVD014.004   [2] Pass    1063 msecs.
+<17:20:42.023214> <status> <Framework>: UVD013.001   [2] Pass    1142 msecs.
+<17:20:43.158865> <status> <Framework>: UVD013.002   [2] Pass    1132 msecs.
+<17:20:44.267871> <status> <Framework>: UVD013.003   [2] Pass    1105 msecs.
+<17:20:45.456625> <status> <Framework>: UVD013.004   [2] Pass    1156 msecs.
+<17:20:46.619821> <status> <Framework>: UVD012.001   [2] Pass    1160 msecs.
+<17:20:47.787596> <status> <Framework>: UVD012.002   [2] Pass    1164 msecs.
+<17:20:48.885468> <status> <Framework>: UVD012.003   [2] Pass    1094 msecs.
+<17:20:50.087557> <status> <Framework>: UVD012.004   [2] Pass    1198 msecs.
+<17:20:50> <common> <Wrapper>: CMD038:./agt -vclk=650 -dclk=500 -i=PCI:0000:03:00.0
+<17:20:50> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:20:50> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:20:50> <common> <Wrapper>: 
+<17:20:50> <common> <Wrapper>:     Current     DCLK         : 496.55 MHz
+<17:20:50> <common> <Wrapper>:     Current     VCLK         : 626.08 MHz
+<17:20:50> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:20:53.812588> <status> <Framework>: UVD016.001   [2] Pass    904 msecs.
+<17:20:54.641594> <status> <Framework>: UVD016.002   [2] Pass    826 msecs.
+<17:20:55.461655> <status> <Framework>: UVD016.003   [2] Pass    817 msecs.
+<17:20:56.335258> <status> <Framework>: UVD016.004   [2] Pass    855 msecs.
+<17:20:57.118339> <status> <Framework>: UVD016.010   [2] Pass    781 msecs.
+<17:20:57.896450> <status> <Framework>: UVD016.012   [2] Pass    776 msecs.
+<17:20:59.346028> <status> <Framework>: UVD017.001   [2] Pass    1447 msecs.
+<17:21:00.868499> <status> <Framework>: UVD017.002   [2] Pass    1514 msecs.
+<17:21:02.298350> <status> <Framework>: UVD017.003   [2] Pass    1428 msecs.
+<17:21:04.141619> <status> <Framework>: UVD019.001   [2] Pass    1841 msecs.
+<17:21:05.914505> <status> <Framework>: UVD019.002   [2] Pass    1770 msecs.
+<17:21:07.772418> <status> <Framework>: UVD019.003   [2] Pass    1824 msecs.
+<17:21:09.556390> <status> <Framework>: UVD019.004   [2] Pass    1781 msecs.
+<17:21:10.569834> <status> <Framework>: UVD019.005   [2] Pass    1010 msecs.
+<17:21:11.430239> <status> <Framework>: UVD019.010   [2] Pass    857 msecs.
+<17:21:13.637006> <status> <Framework>: UVD019.103   [2] Pass    2177 msecs.
+<17:21:14.789502> <status> <Framework>: UVD019.106   [2] Pass    1148 msecs.
+<17:21:15.702563> <status> <Framework>: UVD019.111   [2] Pass    909 msecs.
+<17:21:16.484105> <status> <Framework>: UVD019.116   [2] Pass    779 msecs.
+<17:21:18.591186> <status> <Framework>: UVD019.120   [2] Pass    2075 msecs.
+<17:21:19.695638> <status> <Framework>: UVD019.124   [2] Pass    1102 msecs.
+<17:21:20.592534> <status> <Framework>: UVD019.127   [2] Pass    894 msecs.
+<17:21:21.388392> <status> <Framework>: UVD019.130   [2] Pass    793 msecs.
+<17:21:23.230997> <status> <Framework>: UVD019.201   [2] Pass    1840 msecs.
+<17:21:25.029637> <status> <Framework>: UVD019.209   [2] Pass    1796 msecs.
+<17:21:26.868713> <status> <Framework>: UVD019.216   [2] Pass    1836 msecs.
+<17:21:28.727886> <status> <Framework>: UVD019.223   [2] Pass    1856 msecs.
+<17:21:30.549156> <status> <Framework>: UVD019.230   [2] Pass    1818 msecs.
+<17:21:32.397476> <status> <Framework>: UVD408.001   [2] Pass    1845 msecs.
+<17:21:32> <common> <Wrapper>: CMD039:./agt -vclk=540 -dclk=400 -i=PCI:0000:03:00.0
+<17:21:32> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:32> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:32> <common> <Wrapper>: 
+<17:21:32> <common> <Wrapper>:     Current     DCLK         : 400.00 MHz
+<17:21:32> <common> <Wrapper>:     Current     VCLK         : 533.33 MHz
+<17:21:33> <common> <Wrapper>: ./tserverlite -cf=tserver.cf -d=2 -tf=tserver.tmp.tf
+<17:21:36.317148> <status> <Framework>: UVD030.001   [2] Pass    1345 msecs.
+<17:21:37.956091> <status> <Framework>: UVD030.002   [2] Pass    1637 msecs.
+<17:21:39.635122> <status> <Framework>: UVD030.003   [2] Pass    1676 msecs.
+<17:21:39.698681> <status> <Framework>: UVD030.013   [2] Pass    46 msecs.
+<17:21:39.737020> <status> <Framework>: UVD030.014   [2] Pass    36 msecs.
+<17:21:39.767644> <status> <Framework>: UVD030.015   [2] Pass    28 msecs.
+<17:21:40.763819> <status> <Framework>: UVD030.022   [2] Pass    993 msecs.
+<17:21:40.997177> <status> <Framework>: UVD030.020   [2] Pass    230 msecs.
+<17:21:41.216248> <status> <Framework>: UVD030.021   [2] Pass    217 msecs.
+<17:21:42.342742> <status> <Framework>: UVD030.023   [2] Pass    1124 msecs.
+<17:21:43.399350> <status> <Framework>: UVD030.024   [2] Pass    1052 msecs.
+<17:21:43> <common> <Wrapper>: CMD040:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+./agt  -ppmode=perf  -ppmempct=2 -i=PCI:0000:03:00.0
+./agt   -ppsclkoffsetpct=2 -i=PCI:0000:03:00.0
+<17:21:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>:     Successfully restored DPM.
+<17:21:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>:     Successfully restored DPM.
+<17:21:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:21:46> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:21:46> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:21:46> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>:     PowerPlay mode name "perf" mapped to numeric mode = 1
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>:     PowerPlay mode set to mode = 1
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>: Mode = 1 : PERFORMANCE_MODE : DISALLOW_ON_DC
+<17:21:46> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:21:46> <common> <Wrapper>: HIGH: ENG = 1053 MHz, MEM = 1530 MHz
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:21:46> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:46> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:46> <common> <Wrapper>: 
+<17:21:46> <common> <Wrapper>:     SCLK offset ( 2.00%) applied successfully.
+<17:21:46> <common> <Wrapper>: CMD041:./agt -ppdpmrestore=sclk -i=PCI:0000:03:00.0
+./agt -ppdpmrestore=mclk -i=PCI:0000:03:00.0
+./agt -ppmode=boot  -i=PCI:0000:03:00.0
+<17:21:47> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:47> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:47> <common> <Wrapper>: 
+<17:21:47> <common> <Wrapper>:     Successfully restored DPM.
+<17:21:47> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:47> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:47> <common> <Wrapper>: 
+<17:21:47> <common> <Wrapper>:     Successfully restored DPM.
+<17:21:47> <common> <Wrapper>: Warning: PCI domain number detected and ignored.
+<17:21:47> <common> <Wrapper>: AMD GPU TOOL version 2.3.42.75, Copyright (c) 2016 Advanced Micro Devices, Inc.
+<17:21:47> <common> <Wrapper>: 
+<17:21:47> <common> <Wrapper>:     PowerPlay mode name "boot" mapped to numeric mode = 0
+<17:21:47> <common> <Wrapper>: 
+<17:21:47> <common> <Wrapper>:     PowerPlay mode set to mode = 0
+<17:21:47> <common> <Wrapper>: 
+<17:21:47> <common> <Wrapper>: Mode = 0 : BOOT_STATE : 
+<17:21:47> <common> <Wrapper>:  LOW: ENG = 214 MHz, MEM = 300  MHz
+<17:21:47> <common> <Wrapper>: HIGH: ENG = 214 MHz, MEM = 300  MHz
+<17:21:47> <common> <Wrapper>: 
+<17:21:47> <common> <Wrapper>: SMC ucode version : 29.19.00 (0x1D1300)
+<17:21:47> <common> <Wrapper>: MC ucode version  : 2.14, 3
+<17:21:47> <common> <Wrapper>: 
+<17:39:10> <common> <Wrapper>: Total Pass:	111
+<17:39:10> <common> <Wrapper>: Total Fail:	0
+<17:39:10> <common> <Wrapper>: Total Abort:	0
+<17:39:10> <common> <Wrapper>: Total Skip:	0
+<17:39:10> <common> <Wrapper>: Elapsed Time:	26m 30s

@@ -1,0 +1,2931 @@
+---
+date: "2016-Nov-09"
+time: "09:12:53.112171"
+command: "./tserverlite -autodpmtog=sclk,mclk,30,0 -pm_enable_logging=0 -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  autodpmtog: sclk,mclk,30,0
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pm_enable_logging: 0
+  pr: 1
+  test: STD004.001;AK321.005
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 6622689212400355923
+    id : "STD004.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "TGL renderer"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:12:55.457540"
+    clocks: 
+      memory : "1525"
+      engine : "348"
+  - end: 6622689212400355923
+    result : "Pass"
+    elapsed : 15532
+    temperature : "ActGpuMaxTemp = 37, ActGpuMinTemp = 25, [ASIC_T_MAX, ASIC_T_MIN] = [37, 25]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 3635042799039900023
+    id : "AK321.005"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "1024x768 @ 16bpp"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:13:11.007078"
+    clocks: 
+      memory : "1525"
+      engine : "348"
+  - end: 3635042799039900023
+    result : "Pass"
+    elapsed : 25870
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 32, [ASIC_T_MAX, ASIC_T_MIN] = [38, 32]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "1525"
+      engine : "875"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=38.0,ActMinTemp=25.0,ActAvgTemp=34.4,ActAvgSamples=829,ActCrnt=10.7,ActPkCrnt=34.2
+results:
+  date: "2016-Nov-09"
+  time: "17:13:36.906339"
+  elapsed: 28843794
+  count: 2
+  pass: 2
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:13:43.774134"
+command: "./tserverlite -power_tune -power_tune_log_config=all -report_power_tune_error=1 -power_tune_sample_period=50 -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  power_tune: 1
+  power_tune_log_config: all
+  power_tune_sample_period: 50
+  pr: 1
+  report_power_tune_error: 1
+  test: std4.2;std3.1;std2.1;std1.1
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 1373424119542933073
+    id : "STD004.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "TGL renderer at 4K UHD resolution"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:13:45.404881"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 1373424119542933073
+    result : "Pass"
+    elapsed : 27987
+    temperature : "ActGpuMaxTemp = 59, ActGpuMinTemp = 32, [ASIC_T_MAX, ASIC_T_MIN] = [59, 32]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "996"
+  - start: 17157726784548080900
+    id : "STD003.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "TGL renderer"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:14:13.402300"
+    clocks: 
+      memory : "300"
+      engine : "996"
+  - end: 17157726784548080900
+    result : "Pass"
+    elapsed : 11601
+    temperature : "ActGpuMaxTemp = 59, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [59, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "996"
+  - start: 14874624661799174353
+    id : "STD002.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "TGL renderer"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:14:25.009884"
+    clocks: 
+      memory : "300"
+      engine : "996"
+  - end: 14874624661799174353
+    result : "Pass"
+    elapsed : 13294
+    temperature : "ActGpuMaxTemp = 59, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [59, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "996"
+  - start: 8510094718064838247
+    id : "STD001.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "TGL renderer"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:14:38.312772"
+    clocks: 
+      memory : "300"
+      engine : "996"
+  - end: 8510094718064838247
+    result : "Pass"
+    elapsed : 5723
+    temperature : "ActGpuMaxTemp = 60, ActGpuMinTemp = 47, [ASIC_T_MAX, ASIC_T_MIN] = [60, 47]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "996"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=60.0,ActMinTemp=25.0,ActAvgTemp=44.4,ActAvgSamples=2002,ActCrnt=10.7,ActPkCrnt=36.1
+results:
+  date: "2016-Nov-09"
+  time: "17:14:44.060587"
+  elapsed: 28860286
+  count: 4
+  pass: 4
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:14:48.737488"
+command: "./tserverlite -power_tune -power_tune_log_config=all -report_power_tune_error=1 -power_tune_sample_period=50 -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  power_tune: 1
+  power_tune_log_config: all
+  power_tune_sample_period: 50
+  pr: 1
+  report_power_tune_error: 1
+  test: std5.3
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 14522959824670906504
+    id : "STD005.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Optimized hairmark without initial current spike"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:14:50.368807"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 14522959824670906504
+    result : "Pass"
+    elapsed : 30168
+    temperature : "ActGpuMaxTemp = 68, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [68, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "1525"
+      engine : "1074"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=48.6,ActAvgSamples=2604,ActCrnt=26.0,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:15:20.564947"
+  elapsed: 28831827
+  count: 1
+  pass: 1
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:15:25.986253"
+command: "./tserverlite -cf=gpu/pm4play.cf -vm -tc_PageTableRegionBase=0x0 -tc_PageTableRegionSize=0x100000000 -power_tune -power_tune_log_config=all -report_power_tune_error=1 -power_tune_sample_period=50 -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -pm4file=gpu/pm4play/pk006031 -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pm4file: gpu/pm4play/pk006031
+  power_tune: 1
+  power_tune_log_config: all
+  power_tune_sample_period: 50
+  pr: 1
+  report_power_tune_error: 1
+  tc_PageTableRegionBase: 0x0
+  tc_PageTableRegionSize: 0x100000000
+  test: pk6.31
+  vm: 1
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 10891550680692637982
+    id : "PK006.031"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Baffin"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:15:27.519062"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 10891550680692637982
+    result : "Pass"
+    elapsed : 21392
+    temperature : "ActGpuMaxTemp = 60, ActGpuMinTemp = 50, [ASIC_T_MAX, ASIC_T_MIN] = [61, 50]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=49.5,ActAvgSamples=3032,ActCrnt=13.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:15:48.998842"
+  elapsed: 28823012
+  count: 1
+  pass: 1
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:15:49.423042"
+command: "./tserverlite -cf=gpu/pm4play.cf -vm -tc_PageTableRegionBase=0x0 -tc_PageTableRegionSize=0x100000000 -power_tune -power_tune_log_config=all -report_power_tune_error=1 -power_tune_sample_period=50 -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -pm4file=gpu/pm4play/pk016031 -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pm4file: gpu/pm4play/pk016031
+  power_tune: 1
+  power_tune_log_config: all
+  power_tune_sample_period: 50
+  pr: 1
+  report_power_tune_error: 1
+  tc_PageTableRegionBase: 0x0
+  tc_PageTableRegionSize: 0x100000000
+  test: pk16.31
+  vm: 1
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 15320623738066681378
+    id : "PK016.031"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Baffin"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:15:51.404431"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 15320623738066681378
+    result : "Pass"
+    elapsed : 22504
+    temperature : "ActGpuMaxTemp = 58, ActGpuMinTemp = 48, [ASIC_T_MAX, ASIC_T_MIN] = [59, 48]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=49.9,ActAvgSamples=3482,ActCrnt=13.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:16:13.955812"
+  elapsed: 28824532
+  count: 1
+  pass: 1
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:16:17.675775"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: AJ020.001;AJ020.002;AJ020.003;AJ020.004;AJ020.005;AJ020.006;AJ020.007;AJ020.008;AJ020.009
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 8797876967281178121
+    id : "AJ020.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen1 1SPC and Gen2 1SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:19.750259"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 8797876967281178121
+    result : "Pass"
+    elapsed : 76
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 158117985630337427
+    id : "AJ020.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen1 1SPC and Gen2 2SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:19.911214"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 158117985630337427
+    result : "Pass"
+    elapsed : 78
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 17598900700366539950
+    id : "AJ020.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen1 2SPC and Gen2 1SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:20.084689"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 17598900700366539950
+    result : "Pass"
+    elapsed : 85
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 1047113394584983566
+    id : "AJ020.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen1 2SPC and Gen2 2SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:20.257357"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 1047113394584983566
+    result : "Pass"
+    elapsed : 85
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 2992183847083114593
+    id : "AJ020.005"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen1 1SPC and Gen3 2SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:20.434198"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 2992183847083114593
+    result : "Pass"
+    elapsed : 85
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 7293433657279428841
+    id : "AJ020.006"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen1 2SPC and Gen3 2SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:20.611448"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 7293433657279428841
+    result : "Pass"
+    elapsed : 70
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 1946815732792696973
+    id : "AJ020.007"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen2 1SPC and Gen2 2SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:20.769105"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 1946815732792696973
+    result : "Pass"
+    elapsed : 75
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 5504491277347475508
+    id : "AJ020.008"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen2 1SPC and Gen3 2SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:20.930129"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 5504491277347475508
+    result : "Pass"
+    elapsed : 71
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 321878902220076399
+    id : "AJ020.009"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SPC mode change between Gen2 2SPC and Gen3 2SPC with Endpoint Initiated"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:21.085291"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 321878902220076399
+    result : "Pass"
+    elapsed : 71
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=49.9,ActAvgSamples=3509,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:16:21.170708"
+  elapsed: 28803494
+  count: 9
+  pass: 9
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:16:22.734662"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: aj015.001;aj015.002;aj015.003;aj015.004;aj015.005;aj015.006
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 5508377842011093636
+    id : "AJ015.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Link speed change between Gen1 and Gen1"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:24.472826"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 5508377842011093636
+    result : "Pass"
+    elapsed : 89
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [45, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 17049313775806328709
+    id : "AJ015.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Link speed change between Gen1 and Gen2"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:24.646733"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 17049313775806328709
+    result : "Pass"
+    elapsed : 90
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [45, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 4980346850575553306
+    id : "AJ015.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Link speed change between Gen1 and Gen3"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:24.826542"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 4980346850575553306
+    result : "Pass"
+    elapsed : 90
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [45, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 7476726031596062466
+    id : "AJ015.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Link speed change between Gen2 and Gen2"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:25.005981"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 7476726031596062466
+    result : "Pass"
+    elapsed : 90
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [45, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 17300628545442216661
+    id : "AJ015.005"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Link speed change between Gen2 and Gen3"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:25.187671"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 17300628545442216661
+    result : "Pass"
+    elapsed : 81
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [45, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 8192517946209596732
+    id : "AJ015.006"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Link speed change between Gen3 and Gen3"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:25.363638"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 8192517946209596732
+    result : "Pass"
+    elapsed : 81
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=49.9,ActAvgSamples=3527,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:16:25.463846"
+  elapsed: 28802729
+  count: 6
+  pass: 6
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:16:25.841737"
+command: "./tserverlite -linkwidth=8 -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  linkwidth: 8
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: AG020.008;AG020.010
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 7136629627661452284
+    id : "AG020.008"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "PCIE Link Width Check"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:27.495551"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 7136629627661452284
+    result : "Pass"
+    elapsed : 17
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 9232921120476314344
+    id : "AG020.010"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "PCIE Link Speed Check"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:27.595229"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 9232921120476314344
+    result : "Pass"
+    elapsed : 21
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=49.9,ActAvgSamples=3531,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:16:27.624506"
+  elapsed: 28801782
+  count: 2
+  pass: 2
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:16:28.025767"
+command: "./tserverlite -linkwidth=8 -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  linkwidth: 8
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: AG020.003;AG020.005
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 6350443780722943493
+    id : "AG020.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "PCIE Nak counter check initialize"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:29.730633"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 6350443780722943493
+    result : "Pass"
+    elapsed : 16
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 12759982599003999494
+    id : "AG020.005"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "PCIE Link Quality check initialize"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:29.830309"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 12759982599003999494
+    result : "Pass"
+    elapsed : 20
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=49.9,ActAvgSamples=3535,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:16:29.860589"
+  elapsed: 28801834
+  count: 2
+  pass: 2
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:16:30.072686"
+command: "./tserverlite -vm -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: AK751.406
+  vm: 1
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 12306809398013398118
+    id : "AK751.406"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "VM8: Mixed Sysmem/FB Random BigK/4K - Alternating Snooped/NonSnooped 4K GFX 1024x768 @ 32bpp"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:31.720856"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 12306809398013398118
+    result : "Pass"
+    elapsed : 25460
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 39, [ASIC_T_MAX, ASIC_T_MIN] = [43, 39]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=48.9,ActAvgSamples=4045,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:16:57.204432"
+  elapsed: 28827131
+  count: 1
+  pass: 1
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:16:57.405892"
+command: "./tserverlite -linkwidth=8 -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  linkwidth: 8
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: AG020.004;AG020.006
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 1307383625997895025
+    id : "AG020.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "PCIE Nak counter check test"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:59.173386"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 1307383625997895025
+    result : "Pass"
+    elapsed : 26
+    temperature : "ActGpuMaxTemp = 39, ActGpuMinTemp = 39, [ASIC_T_MAX, ASIC_T_MIN] = [39, 39]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 14808126702267773553
+    id : "AG020.006"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "PCIE Link Quality check test"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:16:59.325902"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 14808126702267773553
+    result : "Pass"
+    elapsed : 51
+    temperature : "ActGpuMaxTemp = 39, ActGpuMinTemp = 39, [ASIC_T_MAX, ASIC_T_MIN] = [39, 39]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=48.9,ActAvgSamples=4050,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:16:59.392891"
+  elapsed: 28801986
+  count: 2
+  pass: 2
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:17:01.816401"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: SDMA006.001;ak401.001;ak403.001;ak010.001;ak311.007;ak308.006;ak312.006;ak321.006;ak404.001
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 6222057168167546458
+    id : "SDMA006.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Test linear to tiled sub-window copy using sDMA0"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:17:03.497405"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 6222057168167546458
+    result : "Pass"
+    elapsed : 28
+    temperature : "ActGpuMaxTemp = 37, ActGpuMinTemp = 37, [ASIC_T_MAX, ASIC_T_MIN] = [37, 37]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 2020319032540237319
+    id : "AK401.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "1024x768 @ 32bpp"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:17:03.529304"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 2020319032540237319
+    result : "Pass"
+    elapsed : 45278
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 37, [ASIC_T_MAX, ASIC_T_MIN] = [43, 37]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - start: 10447941807133723236
+    id : "AK403.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Non-AGP: 1024x768 @ 32bpp"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:17:48.810318"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - end: 10447941807133723236
+    result : "Pass"
+    elapsed : 36720
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [45, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - start: 7153983524890401086
+    id : "AK010.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "1024x768 @ 32bpp, 32 bit data pattern"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:18:25.533920"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - end: 7153983524890401086
+    result : "Pass"
+    elapsed : 13828
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [45, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - start: 17679715595420949064
+    id : "AK311.007"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "DRMDMA:1024x768 @ 32bpp"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:18:39.365164"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - end: 17679715595420949064
+    result : "Pass"
+    elapsed : 9719
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [45, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - start: 10879492538108121716
+    id : "AK308.006"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "1024x768 @ 32bpp"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:18:49.088811"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - end: 10879492538108121716
+    result : "Pass"
+    elapsed : 4534
+    temperature : "ActGpuMaxTemp = 52, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [52, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - start: 1432964438120984519
+    id : "AK312.006"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "1024x768 @ 32bpp"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:18:53.626089"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - end: 1432964438120984519
+    result : "Pass"
+    elapsed : 11678
+    temperature : "ActGpuMaxTemp = 54, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [54, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - start: 7793298888555328015
+    id : "AK321.006"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "1024x768 @ 32bpp"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:19:05.307242"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - end: 7793298888555328015
+    result : "Pass"
+    elapsed : 19978
+    temperature : "ActGpuMaxTemp = 54, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [54, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - start: 1619855992965472311
+    id : "AK404.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Qualification"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:19:25.290436"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+  - end: 1619855992965472311
+    result : "Pass"
+    elapsed : 26900
+    temperature : "ActGpuMaxTemp = 56, ActGpuMinTemp = 47, [ASIC_T_MAX, ASIC_T_MIN] = [56, 47]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "1525"
+      engine : "1074"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=48.0,ActAvgSamples=7424,ActCrnt=17.2,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:19:52.204890"
+  elapsed: 28970388
+  count: 9
+  pass: 9
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:19:52.794570"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: sam1.9;sam1.10;sam7.3;sam8.11;sam8.12;sam9.1;sam9.6;sam10.3;sam10.4
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 8414661518342733373
+    id : "SAM001.009"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM Secure Memory Validation"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:19:54.443745"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 8414661518342733373
+    result : "Pass"
+    elapsed : 135
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 46, [ASIC_T_MAX, ASIC_T_MIN] = [46, 46]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 8955169411196844650
+    id : "SAM001.010"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM Kernel Soft Reset Validation"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:19:54.582231"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 8955169411196844650
+    result : "Pass"
+    elapsed : 4791
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 45, [ASIC_T_MAX, ASIC_T_MIN] = [46, 45]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 8977395669524252262
+    id : "SAM007.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM crypto SHA-256 encryption."
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:19:59.376804"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 8977395669524252262
+    result : "Pass"
+    elapsed : 1798
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [45, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 13025457225613491217
+    id : "SAM008.011"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM crypto DMA XTS encryption."
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:01.177984"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 13025457225613491217
+    result : "Pass"
+    elapsed : 85
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 15295454842967077691
+    id : "SAM008.012"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM crypto DMA XTS decryption."
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:01.264956"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 15295454842967077691
+    result : "Pass"
+    elapsed : 85
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 1975915680775272953
+    id : "SAM009.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM crypto ODD ECB encryption."
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:01.351977"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 1975915680775272953
+    result : "Pass"
+    elapsed : 57
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 9187475820127483611
+    id : "SAM009.006"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM crypto ODD ECB decryption."
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:01.410814"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 9187475820127483611
+    result : "Pass"
+    elapsed : 49
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 14859613108623659912
+    id : "SAM010.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM crypto RSA encryption - 2048bit."
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:01.461562"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 14859613108623659912
+    result : "Pass"
+    elapsed : 61
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 4585173516498931312
+    id : "SAM010.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "SAM crypto RSA decryption - 2048bit."
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:01.524417"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 4585173516498931312
+    result : "Pass"
+    elapsed : 93
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=48.0,ActAvgSamples=7579,ActCrnt=3.6,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:20:01.624293"
+  elapsed: 28808829
+  count: 9
+  pass: 9
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:20:02.220543"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: VCE100.9
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 12087948425936453664
+    id : "VCE100.009"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H.264 baseline @ level 4.1 1920x1080x30FPS"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:03.880907"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 12087948425936453664
+    result : "Pass"
+    elapsed : 1773
+    temperature : "ActGpuMaxTemp = 46, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [46, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "739"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=48.0,ActAvgSamples=7616,ActCrnt=8.5,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:20:05.668621"
+  elapsed: 28803448
+  count: 1
+  pass: 1
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:20:06.280478"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: VCE402.010
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 7222951416883434472
+    id : "VCE402.010"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H.264 baseline @ level 4.1 3840x2160x30FPS"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:07.897814"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 7222951416883434472
+    result : "Pass"
+    elapsed : 2218
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [45, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "739"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=48.0,ActAvgSamples=7662,ActCrnt=8.5,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:20:10.130624"
+  elapsed: 28803850
+  count: 1
+  pass: 1
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:20:10.728156"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: VCE601.8;VCE601.10;VCE605.5;uvd002.006
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 12221876147846454859
+    id : "VCE601.008"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "1920x1080 encoding"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:12.207106"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 12221876147846454859
+    result : "Pass"
+    elapsed : 1986
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [45, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "875"
+  - start: 9239572554006901877
+    id : "VCE601.010"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "4096x2160 encoding"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:14.196159"
+    clocks: 
+      memory : "300"
+      engine : "875"
+  - end: 9239572554006901877
+    result : "Pass"
+    elapsed : 7624
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [45, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - start: 13280326502007437000
+    id : "VCE605.005"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "4096x2160 frame rate:60f/s BR: 30M/s peak constrained rate control"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:21.824373"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - end: 13280326502007437000
+    result : "Pass"
+    elapsed : 6759
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [45, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 15780239686752130153
+    id : "UVD002.006"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "UVD registers test SAFE Mix of IB and RB"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:28.586774"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 15780239686752130153
+    result : "Pass"
+    elapsed : 30
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 44, [ASIC_T_MAX, ASIC_T_MIN] = [44, 44]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "1074"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=47.8,ActAvgSamples=7994,ActCrnt=7.9,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:20:28.633225"
+  elapsed: 28817905
+  count: 4
+  pass: 4
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:20:29.266280"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: uvd011.001;uvd011.002;uvd011.003;uvd011.004;uvd014.001;uvd014.002;uvd014.003;uvd014.004;uvd013.001;uvd013.002;uvd013.003;uvd013.004;uvd012.001;uvd012.002;uvd012.003;uvd012.004
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 504384278618444671
+    id : "UVD011.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "VC1-HD 1920x1080p Boston Harbor"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:30.877641"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 504384278618444671
+    result : "Pass"
+    elapsed : 1444
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [44, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 9949472882588362559
+    id : "UVD011.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "VC1-HD 1920x1080p Leaves"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:32.325307"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 9949472882588362559
+    result : "Pass"
+    elapsed : 1379
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 5915522885868810790
+    id : "UVD011.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "VC1-HD 1920x1080p MainStreet"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:33.709923"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 5915522885868810790
+    result : "Pass"
+    elapsed : 1334
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 1013039491377405563
+    id : "UVD011.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "VC1-HD 1920x1080p TooGoodPond"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:35.048516"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 1013039491377405563
+    result : "Pass"
+    elapsed : 1419
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [44, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 4334677325247892012
+    id : "UVD014.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG2-IDCT-HD 1920x1080p Boston Harbor"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:36.470949"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 4334677325247892012
+    result : "Pass"
+    elapsed : 1076
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 17310514040873553262
+    id : "UVD014.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG2-IDCT-HD 1920x1080p Leaves"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:37.551430"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 17310514040873553262
+    result : "Pass"
+    elapsed : 1182
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 11829114763068023229
+    id : "UVD014.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG2-IDCT-HD 1920x1080p MainStreet"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:38.755014"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 11829114763068023229
+    result : "Pass"
+    elapsed : 1054
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 8222993309068770368
+    id : "UVD014.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG2-IDCT-HD 1920x1080p TooGoodPond"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:39.813241"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 8222993309068770368
+    result : "Pass"
+    elapsed : 1063
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - start: 11102218686680138096
+    id : "UVD013.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG2-VLD-HD 1920x1080p Boston Harbor"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:40.880615"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - end: 11102218686680138096
+    result : "Pass"
+    elapsed : 1142
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 10195200177535238955
+    id : "UVD013.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG2-VLD-HD 1920x1080p Leaves"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:42.025986"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 10195200177535238955
+    result : "Pass"
+    elapsed : 1132
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 10155356707457906129
+    id : "UVD013.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG2-VLD-HD 1920x1080p MainStreet"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:43.162324"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 10155356707457906129
+    result : "Pass"
+    elapsed : 1105
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [44, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 4807073077285524565
+    id : "UVD013.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG2-VLD-HD 1920x1080p TooGoodPond"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:44.300269"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 4807073077285524565
+    result : "Pass"
+    elapsed : 1156
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 6854541581923972612
+    id : "UVD012.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG4-HD 1920x1080p Boston Harbor"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:45.459274"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 6854541581923972612
+    result : "Pass"
+    elapsed : 1160
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [44, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 15354126517375122192
+    id : "UVD012.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG4-HD 1920x1080p Leaves"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:46.623412"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 15354126517375122192
+    result : "Pass"
+    elapsed : 1164
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [44, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 2903797359587087920
+    id : "UVD012.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG4-HD 1920x1080p MainStreet"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:47.791034"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 2903797359587087920
+    result : "Pass"
+    elapsed : 1094
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [44, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 7410089557623169036
+    id : "UVD012.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MPEG4-HD 1920x1080p TooGoodPond"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:48.888786"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 7410089557623169036
+    result : "Pass"
+    elapsed : 1198
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [44, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=47.8,ActAvgSamples=8400,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:20:50.094746"
+  elapsed: 28820828
+  count: 16
+  pass: 16
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:20:50.981279"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: uvd016.001;uvd016.002;uvd016.003;uvd016.004;uvd016.010;uvd016.012;uvd017.001;uvd017.002;uvd017.003;uvd019.001;uvd019.002;uvd019.003;uvd019.004;uvd019.005;uvd019.010;uvd019.103;uvd019.106;uvd019.111;uvd019.116;uvd019.120;uvd019.124;uvd019.127;uvd019.130;UVD019.201;uvd019.209;uvd019.216;uvd019.223;uvd019.230;uvd408.001
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 16217426762907124802
+    id : "UVD016.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264-HD 1920x1080p Boston Harbor"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:52.907752"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 16217426762907124802
+    result : "Pass"
+    elapsed : 904
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [43, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 14216886127579681275
+    id : "UVD016.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264-HD 1920x1080p Leaves"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:53.815263"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 14216886127579681275
+    result : "Pass"
+    elapsed : 826
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 974029268409867372
+    id : "UVD016.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264-HD 1920x1080p MainStreet"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:54.644280"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 974029268409867372
+    result : "Pass"
+    elapsed : 817
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [43, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 12019780755277481206
+    id : "UVD016.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264-HD 1920x1080p TooGoodPond"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:55.479553"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 12019780755277481206
+    result : "Pass"
+    elapsed : 855
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [44, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 15732395138270002659
+    id : "UVD016.010"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264-HD 1280x720p Leaves"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:56.337146"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 15732395138270002659
+    result : "Pass"
+    elapsed : 781
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [43, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "739"
+  - start: 8043155121788060951
+    id : "UVD016.012"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264-HD 1280x720p TooGoodPond"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:57.120217"
+    clocks: 
+      memory : "300"
+      engine : "739"
+  - end: 8043155121788060951
+    result : "Pass"
+    elapsed : 776
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [43, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "739"
+  - start: 7610645267357151638
+    id : "UVD017.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264 4K 4096x2160"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:57.898199"
+    clocks: 
+      memory : "300"
+      engine : "739"
+  - end: 7610645267357151638
+    result : "Pass"
+    elapsed : 1447
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 43, [ASIC_T_MAX, ASIC_T_MIN] = [45, 43]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 5904343281105884091
+    id : "UVD017.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264 4K 4096x2304"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:20:59.353513"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 5904343281105884091
+    result : "Pass"
+    elapsed : 1514
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [45, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 16914262180562812427
+    id : "UVD017.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "Performance Mode H264 4K 3840x2160"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:00.869990"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 16914262180562812427
+    result : "Pass"
+    elapsed : 1428
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [45, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 188661182629198481
+    id : "UVD019.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD Grand Bend Patio 4096x2160"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:02.299874"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 188661182629198481
+    result : "Pass"
+    elapsed : 1841
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [43, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 13103813510434209373
+    id : "UVD019.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD Grand Bend Patio 3840x2160"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:04.144285"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 13103813510434209373
+    result : "Pass"
+    elapsed : 1770
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [43, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 5886976791130509881
+    id : "UVD019.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 4096x2160 Boston Harbor"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:05.947505"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 5886976791130509881
+    result : "Pass"
+    elapsed : 1824
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [43, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - start: 8315374007973518831
+    id : "UVD019.004"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 3840x2160 Boston Harbor rate control"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:07.775002"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - end: 8315374007973518831
+    result : "Pass"
+    elapsed : 1781
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - start: 3147965851082819013
+    id : "UVD019.005"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 1920x1080p Boston Harbor"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:09.558865"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - end: 3147965851082819013
+    result : "Pass"
+    elapsed : 1010
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - start: 14727026950919280238
+    id : "UVD019.010"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 1280x720p Leaves"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:10.572810"
+    clocks: 
+      memory : "300"
+      engine : "472"
+  - end: 14727026950919280238
+    result : "Pass"
+    elapsed : 857
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 7328185949850615565
+    id : "UVD019.103"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 10-bit 4096x2160 Boston Harbor p010_mode msb_mode"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:11.459730"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 7328185949850615565
+    result : "Pass"
+    elapsed : 2177
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [45, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 8800154185611588795
+    id : "UVD019.106"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 10-bit 1920x1080p Leaves p010_mode msb_mode"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:13.640700"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 8800154185611588795
+    result : "Pass"
+    elapsed : 1148
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 10177802267632602310
+    id : "UVD019.111"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 10-bit 1280x720p MainStreet p010_mode msb_mode"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:14.792721"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 10177802267632602310
+    result : "Pass"
+    elapsed : 909
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 15329191608333900269
+    id : "UVD019.116"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-SD 10-bit 720x480p TooGoodPond p010_mode msb_mode"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:15.704775"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 15329191608333900269
+    result : "Pass"
+    elapsed : 779
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "739"
+  - start: 12791366978985735776
+    id : "UVD019.120"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 10-bit 3840x2160 Boston Harbor rate control p010_mode lsb_mode"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:16.515549"
+    clocks: 
+      memory : "300"
+      engine : "739"
+  - end: 12791366978985735776
+    result : "Pass"
+    elapsed : 2075
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [45, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 1774458444537349451
+    id : "UVD019.124"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 10-bit 1920x1080p TooGoodPond p010_mode lsb_mode"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:18.592960"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 1774458444537349451
+    result : "Pass"
+    elapsed : 1102
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [44, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - start: 16556050826961112043
+    id : "UVD019.127"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 10-bit 1280x720p MainStreet p010_mode lsb_mode"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:19.697915"
+    clocks: 
+      memory : "300"
+      engine : "348"
+  - end: 16556050826961112043
+    result : "Pass"
+    elapsed : 894
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - start: 12489216297398048161
+    id : "UVD019.130"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-SD 10-bit 720x480p Leaves p010_mode lsb_mode"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:20.594741"
+    clocks: 
+      memory : "300"
+      engine : "605"
+  - end: 12489216297398048161
+    result : "Pass"
+    elapsed : 793
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 42, [ASIC_T_MAX, ASIC_T_MIN] = [43, 42]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "739"
+  - start: 10150206584750823077
+    id : "UVD019.201"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 10-bit Grand Bend Patio 4096x2160 dithering trunction"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:21.390679"
+    clocks: 
+      memory : "300"
+      engine : "739"
+  - end: 10150206584750823077
+    result : "Pass"
+    elapsed : 1840
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [44, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 4432175102108522343
+    id : "UVD019.209"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 9bitY_9bitC Grand Bend Patio 4096x2160 dithering roundingA"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:23.232782"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 4432175102108522343
+    result : "Pass"
+    elapsed : 1796
+    temperature : "ActGpuMaxTemp = 45, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [45, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 8730832013568949447
+    id : "UVD019.216"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 10bitY_8bitC Grand Bend Patio 4096x2160 dithering roundingB"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:25.031907"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 8730832013568949447
+    result : "Pass"
+    elapsed : 1836
+    temperature : "ActGpuMaxTemp = 44, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [44, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 14275653267633527161
+    id : "UVD019.223"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 8bitY_10bitC Grand Bend Patio 4096x2160 dithering fixed"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:26.871506"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 14275653267633527161
+    result : "Pass"
+    elapsed : 1856
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [43, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 11134267680798754672
+    id : "UVD019.230"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 8bitY_9bitC Grand Bend Patio 4096x2160 dithering random"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:28.730603"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 11134267680798754672
+    result : "Pass"
+    elapsed : 1818
+    temperature : "ActGpuMaxTemp = 43, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [43, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 14562716881400144237
+    id : "UVD408.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "H265-HD 4096x2160 Boston Harbor"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:30.551500"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 14562716881400144237
+    result : "Pass"
+    elapsed : 1845
+    temperature : "ActGpuMaxTemp = 42, ActGpuMinTemp = 41, [ASIC_T_MAX, ASIC_T_MIN] = [42, 41]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=47.8,ActAvgSamples=9228,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:21:32.408769"
+  elapsed: 28841427
+  count: 29
+  pass: 29
+  skip: 0
+  fail: 0
+---
+date: "2016-Nov-09"
+time: "09:21:33.165394"
+command: "./tserverlite -cf=tserver.cf -pr -pi -nw -log -eofe -d=gpu.* -linkspeed=3 -chkedc=all -edcthresh=50 -defaultedc -d=2 -tf=tserver.tmp.tf "
+parameters: 
+  chkedc: all
+  d: 2
+  defaultedc: 1
+  edcthresh: 50
+  eofe: 1
+  linkspeed: 3
+  log: 1
+  nw: 1
+  pi: 1
+  pr: 1
+  test: uvd030.001;uvd030.002;uvd030.003;uvd030.013;uvd030.014;uvd030.015;uvd030.022;uvd030.020;uvd030.021;uvd030.023;uvd030.024
+configuration:
+ - "Kernel: 3.16.0-67-generic"
+ - "Virtual Memory: 768MB"
+tests:
+  - start: 12988424323504099248
+    id : "UVD030.001"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 1920x1088 4:2:0"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:34.971927"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 12988424323504099248
+    result : "Pass"
+    elapsed : 1345
+    temperature : "ActGpuMaxTemp = 39, ActGpuMinTemp = 39, [ASIC_T_MAX, ASIC_T_MIN] = [39, 39]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 14686850780691371401
+    id : "UVD030.002"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 1920x1088 4:2:2 YYUV"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:36.318853"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 14686850780691371401
+    result : "Pass"
+    elapsed : 1637
+    temperature : "ActGpuMaxTemp = 39, ActGpuMinTemp = 39, [ASIC_T_MAX, ASIC_T_MIN] = [39, 39]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 6827615351596969835
+    id : "UVD030.003"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 1920x1088 4:2:2 YYYYUUVV"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:37.958956"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 6827615351596969835
+    result : "Pass"
+    elapsed : 1676
+    temperature : "ActGpuMaxTemp = 39, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [39, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 13133311360691255211
+    id : "UVD030.013"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 8192x16 4:2:0"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:39.651777"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 13133311360691255211
+    result : "Pass"
+    elapsed : 46
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [38, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 7617522111286446857
+    id : "UVD030.014"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 8192x16 4:2:2 YYUV"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:39.700906"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 7617522111286446857
+    result : "Pass"
+    elapsed : 36
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [38, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 15638755868168347750
+    id : "UVD030.015"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 8192x16 4:2:2 YYYYUUVV"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:39.738960"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 15638755868168347750
+    result : "Pass"
+    elapsed : 28
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [38, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 4519835918555742578
+    id : "UVD030.022"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 8192x8192 4:2:0"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:39.769973"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 4519835918555742578
+    result : "Pass"
+    elapsed : 993
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [38, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 15677329959198078440
+    id : "UVD030.020"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 3840x2160 4:2:2 YYUV"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:40.766616"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 15677329959198078440
+    result : "Pass"
+    elapsed : 230
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [38, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 8234602479340437276
+    id : "UVD030.021"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 3840x2160 4:2:2 YYYYUUVV"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:40.999026"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 8234602479340437276
+    result : "Pass"
+    elapsed : 217
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [38, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 1809516469933956128
+    id : "UVD030.023"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 8192x8192 4:2:2 YYUV"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:41.217937"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 1809516469933956128
+    result : "Pass"
+    elapsed : 1124
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [38, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - start: 13820887329377885793
+    id : "UVD030.024"
+    device : "PCI:0000:03:00.0 - 67ef - c5 - 0380 - Baffin PF"
+    device_id : 2
+    description : "MJPEG decoding 8192x8192 4:2:2 YYYYUUVV"
+    termoffset : 0
+    repeat_count : 1
+    date : "2016-Nov-09"
+    time : "17:21:42.346562"
+    clocks: 
+      memory : "300"
+      engine : "218"
+  - end: 13820887329377885793
+    result : "Pass"
+    elapsed : 1052
+    temperature : "ActGpuMaxTemp = 38, ActGpuMinTemp = 38, [ASIC_T_MAX, ASIC_T_MIN] = [38, 38]"
+    errors: 
+      - "No Errors Reported"
+    clocks: 
+      memory : "300"
+      engine : "218"
+ProfileEventInfo-Baffin-ID-2: 
+ - ActMaxTemp=68.0,ActMinTemp=25.0,ActAvgTemp=47.8,ActAvgSamples=9410,ActCrnt=4.1,ActPkCrnt=54.4
+results:
+  date: "2016-Nov-09"
+  time: "17:21:43.408896"
+  elapsed: 28810243
+  count: 11
+  pass: 11
+  skip: 0
+  fail: 0
