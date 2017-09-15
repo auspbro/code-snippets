@@ -1,3 +1,4 @@
+// 'use strict';
 
 var o = { x: 1, y: 2};          // 定义一个对象
 console.log(delete o.x);        // true，删除一个属性
@@ -24,3 +25,58 @@ console.log(a++);   // 5
 console.log(++a);   // 7
 console.log(a--);   // 7
 console.log(--a);   // 5
+
+// var age = 20
+// if (age >= 18) {
+//     alert('adult') 
+// } else {
+//     alert('teenager')
+// }
+
+// var age = 20
+// if (age >= 18) {
+//     alert('adult') 
+// } else {
+//     console.log('age < 18')
+//     alert('teenager')
+// }
+
+// var age = 3
+// if (age >= 18) {
+//     alert('adult')
+// } else if (age >= 6) {
+//     alert('teenager')
+// } else {
+//     alert('kid')
+// }
+
+// var age = 3
+// if (age >= 18) {
+//     alert('adult')
+// } else {
+//     if (age >= 6) {
+//         alert('teenager')
+//     } else {
+//         alert('kid')
+//     }
+// }
+
+var height = parseFloat(prompt('请输入身高(m):'))
+var weight = parseFloat(prompt('请输入体重(kg):'))
+var bmi = weight / (height * height)
+console.log(bmi)
+
+if (bmi > 32) {
+    alert('very fat')
+} else if (28 < bmi < 32){
+    alert('fat')
+} else if (25 < bmi < 28) {
+    alert('overweight')
+} else if (18.5 < bmi < 25) {
+    alert('normal')
+} else {
+    alert('thin')
+}
+
+
+
