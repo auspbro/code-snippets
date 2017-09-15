@@ -68,11 +68,11 @@ console.log(bmi)
 
 if (bmi > 32) {
     alert('very fat')
-} else if (28 < bmi < 32){
+} else if (bmi > 28 && bmi < 32){
     alert('fat')
-} else if (25 < bmi < 28) {
+} else if (bmi > 25 && bmi < 28) {
     alert('overweight')
-} else if (18.5 < bmi < 25) {
+} else if (bmi > 18.5 && bmi < 25) {
     alert('normal')
 } else {
     alert('thin')
