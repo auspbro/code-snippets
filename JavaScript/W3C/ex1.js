@@ -81,23 +81,56 @@ console.log(--a);   // 5
 
 
 // -------------- for loop ----------------
-var x = 1
-for (var i = 1; i <= 10; i++) {
-    x *= i
-}
+// var x = 1
+// for (var i = 1; i <= 10; i++) {
+//     x *= i
+// }
 
+// console.log(x)
+
+// if (x === 3628800) {
+//     alert('1 * 2 * 3 * ...*10 = ' + x)
+// } else {
+//     alert('计算错误！！')
+// }
+
+// // -------------- for loop 利用索引遍历数组 ------
+// var arr = ['Apple', 'Google', 'Microsoft','Amzon']
+// for (var index = 0; index < arr.length; index++) {
+//     var element = arr[index];
+//     element = arr[index]
+//     alert(element)
+// }
+
+// var object = {
+//     name: 'Xuexiang',
+//     age: 18,
+//     city: 'Shanghai',
+// }
+// for (var key in object) {
+//         //var element = object[key];
+//         alert(key)
+//     }
+
+// var object = {
+//     name: 'Xuexiang',
+//     age: 18,
+//     city: 'Shanghai',
+
+// }
+// for (var key in object) {
+//     if (object.hasOwnProperty(key)) {
+//         var element = object[key];
+//         alert(key)
+//         alert(element)
+//     }
+// }
+
+var x = 0
+var n = 99
+while (n > 0) {
+    x = x + n
+    n = n - 2
+}
 console.log(x)
-
-if (x === 3628800) {
-    alert('1 * 2 * 3 * ...*10 = ' + x)
-} else {
-    alert('计算错误！！')
-}
-
-// -------------- for loop 利用索引遍历数组 ------
-var arr = ['Apple', 'Google', 'Microsoft','Amzon']
-for (var index = 0; index < arr.length; index++) {
-    var element = arr[index];
-    element = arr[index]
-    alert(element)
-}
+alert(x)
