@@ -134,3 +134,9 @@ while (n > 0) {
 }
 console.log(x)
 alert(x)
+
+var arr = ['Bart', 'Lisa', 'Adam']
+for (var index = 0; index < array.length; index++) {
+    var element = array[index];
+    
+}
