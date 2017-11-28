@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:green; width:150px; height:50px; padding:20px; color:white";>把鼠标移动到上面</div>
+
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "谢谢！"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "把鼠标移动到上面"
+        }
+    </script>
+</body>
+</html>
