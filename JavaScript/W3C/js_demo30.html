@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var m = new Map()
+        // var s = new Set()
+        // console.log('你的浏览器支持Map和Set！')
+        'use strict'
+        function foo() {
+            var x = 1
+            function bar() {
+                var x = 'A'
+                console.log('x in bar() = ' + x)
+            }
+            console.log('x in foo() = ' + x)
+            bar()
+        }
+        foo()
+    </script>
+</body>
+</html>
