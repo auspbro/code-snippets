@@ -73,4 +73,38 @@
     </div>
 </body>
 
+<script>
+    var timer
+    window.onload = function () {
+        createGrass()
+        createSnake()
+        createFood()
+        document.getElementById('start').onclick = function () {
+            clearInterval(timer)    //防止多次点击开始
+            timer = setInterval(function () {
+                snakeMove(diRection)
+            }, 150)
+            snakeMove(diRection)
+        }
+        document.getElementById('pause').onclick = function () {
+            clearInterval(timer)
+        }
+    }
+
+    //创建草坪
+    function createGrass() {
+        var oGround = document.getElementById('ground')
+        var oDiv
+        for (let i = 0; i < 50; i++) {
+            for (let j = 0; j < 25; j++) {
+                oDiv = document.createElement('div')
+                oDiv.className = 'block'
+                oGround.appendChild(oDiv)
+            }
+        }
+    }
+
+    
+</script>
+
 </html>
