@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gluttonous Snake Game</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 1000px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 100px auto;
+
+        }
+
+        #ground {
+            width: 1000px;
+            height: 500px;
+            position: relative;
+        }
+
+        #button {
+            float: right;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        button {
+            width: 50px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .block {
+            width: 20px;
+            height: 20px;
+            background: #2abad9;
+            float: left;
+        }
+
+        .snakeBody {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: #5d05ec
+        }
+
+        .food {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="ground"></div>
+        <div id="gameControl"></div>
+        <div id="button">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+        </div>
+    </div>
+</body>
+
+</html>
