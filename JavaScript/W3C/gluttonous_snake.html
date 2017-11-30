@@ -104,6 +104,21 @@
         }
     }
 
+    //创建蛇
+    var snakeBody = [], oFood, diRection = 'left'
+    function createSnake() {
+        var oGround = document.getElementById('ground')
+        var oDiv
+        for (let i = 0; i < 3; i++) {
+            oDiv = document.createElement('div')
+            oDiv.className = 'snakeBody'
+            oDiv.style.left = (i + 40) * 20 + 'px'
+            oDiv.style.top = '60px'
+            oGround.appendChild(oDiv)
+            snakeBody.push(oDiv)
+        }
+    }
+
     
 </script>
 
