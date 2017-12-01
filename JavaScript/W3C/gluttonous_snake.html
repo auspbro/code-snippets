@@ -119,7 +119,65 @@
         }
     }
 
-    
+    //创建食物
+    function createFood() {
+        var flag = ture
+        var oGround = document.getElementById('ground')
+        // var oDiv
+        var len = snakeBody.length
+        var iLeft, iTop
+        oFood = document.createElement('div')
+        oFood.className = 'food'
+        iLeft = parseInt(Math.random() * 49) * 20
+        iTop = parseInt(Math.random() * 24) * 20
+        for (var i = 0; i < len; i++) {
+            if (snakeBody[i].offsetLeft == iLeft && snakeBody[i].offsetTop == iTop) {
+                flag = false
+                break
+            }
+        }
+        if (flag == true) {
+            oFood.style.left = iLeft + 'px'
+            oFood.style.top = iTop + 'px'
+            oGround.appendChild(oFood)
+        } else {
+            createFood()     //若生成的div有重合则再次调用自身
+        }
+    }
+
+    //蛇运动
+    function snakeMove(diRection) { //direction用于作为蛇移动的四个方向的判断
+        var snakeHead = snakeBody[0]    //获取蛇头
+        diRection = direction   //用于防止比如蛇身本来往左边走，但是向右按钮仍然有效的情况
+        for (let i = snakeBody.length-1; i > 0; i--) {
+            snakeBody[i].style.left = snakeBody[i-1].offsetLeft + 'px'
+            snakeBody[i].style.top = snakeBody[i-1].offsetTop + 'px'
+        }
+        switch (direction) {
+            case 'left':
+                snakeHead.style.left = snakeHead.offsetLeft - 20 + 'px'
+                break;
+            case 'right':
+                snakeHead.style.left = snakeHead.offsetLeft + 20 + 'px'
+                break;
+            case 'up':
+                snakeHead.style.top = snakeHead.offsetTop - 20 + 'px'
+                break;
+            case 'down':
+                snakeHead.style.top = snakeHead.offsetTop + 20 + 'px'
+                break;
+        
+            default:
+                break;
+        }
+
+        //蛇头碰壁
+        if (snakeHead.offsetLeft == -20 || snake) {
+            
+        }
+    }
+
+
 </script>
 
 </html>
