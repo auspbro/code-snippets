@@ -149,9 +149,9 @@
     function snakeMove(diRection) { //direction用于作为蛇移动的四个方向的判断
         var snakeHead = snakeBody[0]    //获取蛇头
         diRection = direction   //用于防止比如蛇身本来往左边走，但是向右按钮仍然有效的情况
-        for (let i = snakeBody.length-1; i > 0; i--) {
-            snakeBody[i].style.left = snakeBody[i-1].offsetLeft + 'px'
-            snakeBody[i].style.top = snakeBody[i-1].offsetTop + 'px'
+        for (let i = snakeBody.length - 1; i > 0; i--) {
+            snakeBody[i].style.left = snakeBody[i - 1].offsetLeft + 'px'
+            snakeBody[i].style.top = snakeBody[i - 1].offsetTop + 'px'
         }
         switch (direction) {
             case 'left':
@@ -166,14 +166,68 @@
             case 'down':
                 snakeHead.style.top = snakeHead.offsetTop + 20 + 'px'
                 break;
-        
+
             default:
                 break;
         }
 
         //蛇头碰壁
-        if (snakeHead.offsetLeft == -20 || snake) {
-            
+        if (snakeHead.offsetLeft == -20 || snakeHead.offsetLeft == 1000 || snakeHead.offsetTop == -20 || snakeHead.offsetTop == 500) {
+            clearInterval(timer);
+            if (confirm('再来一次?')) {
+                window.location.reload();
+            }
+        }
+
+        //蛇碰到自身
+        for (var j = 1; j < snakeBody.length; j++) {
+            if (snakeHead.offsetLeft == snakeBody[j].offsetLeft && snakeHead.offsetTop == snakeBody[j].offsetTop) {
+                clearInterval(timer);
+                if (confirm('再来一次')) {
+                    window.location.reload();
+                }
+            }
+        }
+
+        //吃掉食物
+        if (snakeHead.offsetLeft == oFood.offsetLeft && snakeHead.offsetTop == oFood.offsetTop) {
+            oFood.className = 'snakeBody snake-block';  //食物变成和蛇身一样的颜色
+            console.log(snakeBody[snakeBody.length - 1].offsetTop);
+            switch (direction) {  //把oFood的坐标采用最后一个div的坐标
+                case 'left': oFood.style.left = snakeBody[snakeBody.length - 1].offsetLeft + 'px'; break;
+                case 'right': oFood.style.left = snakeBody[snakeBody.length - 1].offsetLeft + 'px'; break;
+                case 'up': oFood.style.top = snakeBody[snakeBody.length - 1].offsetTop + 'px'; break;
+                case 'down': oFood.style.top = snakeBody[snakeBody.length - 1].offsetTop + 'px'; break;
+            }
+            snakeBody.push(oFood);  //这里最好用push把吃掉的div添加到蛇尾,添加到头部有一个问题，吐过实物div是靠边生成，那么吃掉后会超出墙范围或者直接撞墙
+            createFood();
+        }
+    }
+
+    //上下左右操作
+    document.onkeydown = function (e) {  //document不要换成window，出滚动条的话，window会导致窗口移动
+        var event = e || window.event;
+        var direction = event.keyCode;
+        switch (direction) {
+            case 37:
+                if (diRection != 'right') {
+                    snakeMove('left');
+                }
+                break;  //左
+            case 39:
+                if (diRection != 'left') {
+                    snakeMove('right');
+                }
+                break;  //右
+            case 38:
+                if (diRection != 'down') {
+                    snakeMove('up');
+                }
+                break;  //上
+            case 40: if (diRection != 'up') {
+                snakeMove('down');
+            }
+                break;  //下
         }
     }
 
