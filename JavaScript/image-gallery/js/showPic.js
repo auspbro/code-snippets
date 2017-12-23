@@ -3,6 +3,9 @@ function showPic(whichpic) {
     var source = whichpic.getAttribute("href")
     var palceholder = document.getElementById("placeholder")
     placeholder.setAttribute("src", source)
+    var text = whichpic.getAttribute("title")
+    var description = document.getElementById("description")
+    discription.firstChild.nodeValue = text
 }
 
 function countBodyChildren() {
