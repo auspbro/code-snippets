@@ -105,7 +105,7 @@
     }
 
     //创建蛇
-    var snakeBody = [], oFood, diRection = 'left'
+    var snakeBody = [], oFood, diRection = 'left';
     function createSnake() {
         var oGround = document.getElementById('ground')
         var oDiv
@@ -121,7 +121,7 @@
 
     //创建食物
     function createFood() {
-        var flag = ture
+        var flag = 1
         var oGround = document.getElementById('ground')
         // var oDiv
         var len = snakeBody.length
@@ -149,7 +149,7 @@
     function snakeMove(diRection) { //direction用于作为蛇移动的四个方向的判断
         var snakeHead = snakeBody[0]    //获取蛇头
         diRection = direction   //用于防止比如蛇身本来往左边走，但是向右按钮仍然有效的情况
-        for (let i = snakeBody.length - 1; i > 0; i--) {
+        for (var i = snakeBody.length - 1; i > 0; i--) {
             snakeBody[i].style.left = snakeBody[i - 1].offsetLeft + 'px'
             snakeBody[i].style.top = snakeBody[i - 1].offsetTop + 'px'
         }
