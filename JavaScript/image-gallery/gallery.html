@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Image Gallery</title>
-    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/layout.css" media="screen">
 </head>
 
 <body>
     <h1>Snapshots</h1>
     <ul>
-        <li><a href="img/AtletiekcentrumStadspark.jpg" onmouseover="showPic(this); return false;" title="Big Apple at Twilight"> Twilight</a></li>
+        <li><a href="img/AtletiekcentrumStadspark.jpg" onclick="showPic(this); return false;" title="Big Apple at Twilight"> Twilight</a></li>
         <li><a href="img/original.jpg" onclick="showPic(this); return false;" title="Big Apple at Twilight"> Color Burst</a></li>
         <li><a href="img/Pilon-239.jpg" onclick="showPic(this); return false;" title="Dorset durdle door"> Dorset durdle door</a></li>
         <li><a href="img/Stadspark.jpg" onclick="showPic(this); return false;" title="material"> Material</a></li>
@@ -21,6 +21,9 @@
     <img id="placeholder" src="img/placeholder.png" alt="my image gallery">
 
     <p id="description">choose an image.</p>
+    
+    <!-- 新建固定大小窗口 -->
+    <a href="javascript:popUp('http://baidu.com');">New Window</a>
     
     <script src="js/showPic.js"></script>
 </body>
