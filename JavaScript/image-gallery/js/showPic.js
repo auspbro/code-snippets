@@ -8,9 +8,13 @@ function showPic(whichpic) {
     discription.firstChild.nodeValue = text
 }
 
-function countBodyChildren() {
-    var body_element = document.getElementsByTagName("body")[0]
-    alert(body_element.childNodes.length)
-}
+// function countBodyChildren() {
+//     var body_element = document.getElementsByTagName("body")[0]
+//     alert(body_element.childNodes.length)
+// }
 
-window.onload = countBodyChildren;
+// window.onload = countBodyChildren;
+
+function popUp(winURL) {
+    window.open(winURL, "popup", "width=320, height=480")
+}
