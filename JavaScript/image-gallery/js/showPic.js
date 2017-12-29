@@ -21,6 +21,9 @@ function popUp(winURL) {
 
 window.onload = prepareLinks
 function prepareLinks() {
+    if (!document.getElementsByTagName) {
+        return false
+    }
     var links = document.getElementsByTagName("a")
     for (let i = 0; i < links.length; i++) {
         if (links[i].getAttribute("classs") == "popup") {
