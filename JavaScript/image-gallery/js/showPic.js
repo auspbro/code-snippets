@@ -1,11 +1,22 @@
 
 function showPic(whichpic) {
+    if (!document.getElementById("placeholder")) {
+        return false
+    }
     var source = whichpic.getAttribute("href")
     var palceholder = document.getElementById("placeholder")
+    if (palceholder.nodeName != "IMG")) {
+        return false
+    }
     placeholder.setAttribute("src", source)
-    var text = whichpic.getAttribute("title")
-    var description = document.getElementById("description")
-    discription.firstChild.nodeValue = text
+    if (document.getElementById("description")) {
+        var text = whichpic.getAttribute("title") ? whichpic.getAttribute("title") : ""
+        var description = document.getElementById("description")
+        if (description.firstChild.nodeValue == 3) {
+            discription.firstChild.nodeValue = text
+        }
+    }
+    return true
 }
 
 // function countBodyChildren() {
@@ -15,9 +26,9 @@ function showPic(whichpic) {
 
 // window.onload = countBodyChildren;
 
-function popUp(winURL) {
-    window.open(winURL, "popup", "width=320, height=480")
-}
+// function popUp(winURL) {
+//     window.open(winURL, "popup", "width=320, height=480")
+// }
 
 window.onload = prepareLinks
 function prepareLinks() {
@@ -45,15 +56,15 @@ function prepareGallery() {
     for (let i = 0; i < links.length; i++) {
         links[i].onclick = function () {
             showPic(this)
-            return false
-        }        
+            return !showPic(this)
+        }
     }
 }
 
 function addLoadEvent(func) {
     var oldonload = window.onload
     if (typeof window.onload != 'function') {
-        window.onload = func        
+        window.onload = func
     } else {
         window.onload = function () {
             oldonload()
