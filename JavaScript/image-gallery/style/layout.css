@@ -32,3 +32,11 @@ img {
     display: block;
     clear: both;
 }
+
+#imagegallery {
+    list-style: none;
+}
+
+#imagegallery li {
+    display: inline;
+}
