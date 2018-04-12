@@ -19,3 +19,8 @@ w = "This is the left side of ..."
 e = "a string with a right side."
 
 print w + e
+
+print "%03d" % 33
+print "%09d" % 33
+print "%3d" % 33
+print "%9d" % 33
