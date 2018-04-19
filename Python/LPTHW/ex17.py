@@ -17,7 +17,7 @@ print "Ready? Hint <Enter> key continue, hint <CTRL+C> abort."
 
 raw_input()
 
-out_file = open(to_file, 'w')
+out_file = open(to_file, 'a')
 out_file.write(indata)
 
 print "Alright, all done."
