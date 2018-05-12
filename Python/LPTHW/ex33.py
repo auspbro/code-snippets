@@ -19,7 +19,8 @@ def list_loop(counts):
 		number.append(i)
 		i += 1
 		print "Number now: ", number
+	return number
 
 counts = input("input a number: ")
 new_num = list_loop(counts)
-print "The numbers: ", new_num
+print "The new numbers: ", new_num
