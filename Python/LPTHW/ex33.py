@@ -13,7 +13,6 @@
 
 i = 0
 number = []
-counts = 9
 def list_loop(counts):
 	global i
 	while i < counts:
@@ -21,5 +20,6 @@ def list_loop(counts):
 		i += 1
 		print "Number now: ", number
 
-new_num = list_loop(9)
+counts = input("input a number: ")
+new_num = list_loop(counts)
 print "The numbers: ", new_num
