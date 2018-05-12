@@ -11,16 +11,35 @@
 # for num in number:
 # 	print num
 
+# =======================
+# while loop function
+# i = 0
+# number = []
+# def list_loop(counts):
+# 	global i
+# 	while i < counts:
+# 		number.append(i)
+# 		i += 1
+# 		print "Number now: ", number
+# 	return number
+
+# counts = input("input a number: ")
+# new_num = list_loop(counts)
+# print "The new numbers: ", new_num
+
+
+# ============
+# for loop function
 i = 0
 number = []
-def list_loop(counts):
+def list_loop(input_by_user):
 	global i
-	while i < counts:
+	for i in range(input_by_user):
 		number.append(i)
 		i += 1
 		print "Number now: ", number
 	return number
 
-counts = input("input a number: ")
-new_num = list_loop(counts)
+input_by_user = input("please input a number: ")
+new_num = list_loop(input_by_user)
 print "The new numbers: ", new_num
