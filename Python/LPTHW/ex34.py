@@ -58,15 +58,14 @@ def dead(why):
 def start():
 	print "You are in a dark room."
 	print "There is way to your right and left."
-	print "Which one do you take?"
+	print "Which one do you take('r' for right or 'l' for left)?"
 
 	next = raw_input("> ")
-	if next == "left":
+	if next == "l":
 		bear_room()
-	elif next == "right":
+	elif next == "r":
 		cthulhu_room()
 	else:
 		dead("You stumble around the room until you starve.")
 
 start()
-
