@@ -52,7 +52,7 @@ def cthulhu_room():
 		cthulhu_room()
 
 def dead(why):
-	print why, "Good, job!"
+	print why, "Good job!"
 	exit(0)
 
 def start():
