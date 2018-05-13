@@ -1,4 +1,3 @@
-
 # while i < 9:
 # 	print "At the top i is %d" % i
 # 	number.append(i)
@@ -27,18 +26,20 @@
 # new_num = list_loop(counts)
 # print "The new numbers: ", new_num
 
-
 # ============
 # for loop function
 i = 0
 number = []
+
+
 def list_loop(input_by_user):
-	global i
-	for i in range(input_by_user):
-		number.append(i)
-		i += 1
-		print "Number now: ", number
-	return number
+    global i
+    for i in range(input_by_user):
+        number.append(i)
+        i += 1
+        print "Number now: ", number
+    return number
+
 
 input_by_user = input("please input a number: ")
 new_num = list_loop(input_by_user)
