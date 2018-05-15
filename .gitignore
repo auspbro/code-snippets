@@ -2,6 +2,8 @@
 ## Eclipse
 #################
 
+.vscode/
+settings.json
 *.pydevproject
 .project
 .metadata
