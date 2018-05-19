@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+
 def mycomputer(*args):
     arg1, arg2, arg3, arg4 = args
     print "HDD size: %d" % arg1
