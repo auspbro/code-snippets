@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # coding: utf-8
 
+
 class Person(object):
     role = 'person'
 
@@ -13,7 +14,8 @@ class Person(object):
     def attack(self, dog):
         dog.life_value -= self.aggressivity
 
-class dog(object):
+
+class Dog(object):
     role = 'dog'
 
     def __init__(self, name, breed, aggressivity, life_value):
@@ -24,6 +26,7 @@ class dog(object):
 
     def bite(self, people):
         people.life_value -= self.aggressivity
+
 
 class Weapon(object):
     def __init__(self, name, price, aggrev, life_value):
@@ -40,4 +43,19 @@ class Weapon(object):
     def prick(self, obj):
         obj.life_value -= 500
 
-lance = Weapon('')
+
+lance = Weapon('长矛', 200, 10, 1000)
+person1 = Person('capt', 10, 1000, 500)
+dog1 = Dog('二愣子', '哈士奇', 10, 1000)
+
+# egg独自力战"二愣子"深感吃力，决定穷毕生积蓄买一把武器
+if person1.money > lance.price:
+    lance.update(person1)
+    person1.weapon = lance
+
+print(person1.money, person1.life_value, person1.aggressivity)
+print(dog1.life_value)
+person1.attack(dog1)
+print(dog1.life_value)
+person1.weapon.prick(dog1)
+print(dog1.life_value)
