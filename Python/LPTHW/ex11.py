@@ -6,8 +6,8 @@
 answer = raw_input("请输入你是谁  ".decode('utf-8').encode('gbk'))
 print u"竟然你是%s，那你好" % (answer.decode('gbk'))
 
-print "How old are you?"
-age = raw_input('请输入年龄：'.decode('utf-8').encode('GBK'))
+print "How old are you?",
+age = int(raw_input('请输入年龄：'.decode('utf-8').encode('GBK')))
 
 print "How tall are you?"
 height = raw_input("input:")
