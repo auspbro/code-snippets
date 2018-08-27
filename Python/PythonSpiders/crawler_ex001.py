@@ -12,6 +12,9 @@ import re
 def get_html(url):
     pageAddr = urllib.urlopen(url)
     html_code = pageAddr.read()
+    page_file = open('html_code.txt', 'w')
+    page_file.write(html_code)
+    page_file.close
     return html_code
 
 # 抓取页面图片保存到本地
