@@ -1,17 +1,21 @@
 #!/usr/bin/python
 # coding: utf-8
 
+'百度贴吧图片抓取'
+
+__author__ = 'Xiang Xue'
+
 import urllib
 import re
 
-
+# 获取 html 页面 source code
 def get_html(url):
     pageAddr = urllib.urlopen(url)
     html_code = pageAddr.read()
     return html_code
 
+# 抓取页面图片保存到本地
 def get_image(html_code):
-    
     reg = r'src="(.+?\.jpg)" width'
     reg_img = re.compile(reg)
     img_list = reg_img.findall(html_code)
