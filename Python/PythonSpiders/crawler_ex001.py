@@ -8,6 +8,19 @@ __author__ = 'Xiang Xue'
 import urllib
 import re
 
+# 显示下载的进度
+def callbackfunc(blocknum, blocksize, totalsize):
+    '''回调函数
+    @blocknum: 已经下载的数据块
+    @blocksize: 数据块的大小
+    @totalsize: 远程文件的大小
+    '''
+    percent = 100.0 * blocknum * blocksize / totalsize
+    if percent > 100:
+        percent = 100
+    print "%.2f%%"% percent
+
+
 # 获取 html 页面 source code
 def get_html(url):
     pageAddr = urllib.urlopen(url)
@@ -17,6 +30,7 @@ def get_html(url):
     # page_file.close
     return html_code
 
+
 # 抓取页面图片保存到本地
 def get_image(html_code):
     reg = r'src="(.+?\.jpg)" width'
@@ -25,8 +39,9 @@ def get_image(html_code):
     x = 0
     for img in img_list:
         # print img
-        urllib.urlretrieve(img, '%s.jpg' %x)
+        urllib.urlretrieve(img, '%s.jpg' % x, callbackfunc)
         x += 1
+
 
 print u'--------网页图片抓取----------'
 print u'请输入url：'
