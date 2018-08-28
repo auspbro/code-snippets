@@ -12,9 +12,9 @@ import re
 def get_html(url):
     pageAddr = urllib.urlopen(url)
     html_code = pageAddr.read()
-    page_file = open('html_code.txt', 'w')
-    page_file.write(html_code)
-    page_file.close
+    # page_file = open('html_code.txt', 'w')
+    # page_file.write(html_code)
+    # page_file.close
     return html_code
 
 # 抓取页面图片保存到本地
@@ -26,7 +26,7 @@ def get_image(html_code):
     for img in img_list:
         # print img
         urllib.urlretrieve(img, '%s.jpg' %x)
-        x =+ 1
+        x += 1
 
 print u'--------网页图片抓取----------'
 print u'请输入url：'
@@ -35,7 +35,7 @@ if url:
     pass
 else:
     print u'------没有地址输入正在使用默认地址-------'
-    url = 'http://tieba.baidu.com/p/1753935195'
+    url = 'https://tieba.baidu.com/p/1753935195?red_tag=0505940801'
 
 print u'-------正在获取网页--------'
 html_code = get_html(url)
