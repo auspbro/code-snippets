@@ -17,4 +17,4 @@ def fab(n):
 
 result = fab(40)
 if result != -1:
-    print('总共有%d对小兔崽子诞生!' % result) 
+    print('总共有%d对小兔崽子诞生!' % result)
