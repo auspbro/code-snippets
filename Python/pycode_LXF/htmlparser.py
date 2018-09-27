@@ -10,6 +10,7 @@
 from HTMLParser import HTMLParser
 import urllib
 
+
 class PyEventParser(HTMLParser):
     def __init__(self):
         HTMLParser.__init__(self)
@@ -26,7 +27,7 @@ class PyEventParser(HTMLParser):
             self._flag = 'time'
         if tag == 'span' and attrs.__contains__(('class', 'event-location')):
             self._flag = 'event-location'
-    
+
     def handle_data(self, data):
         if self._flag == 'event-title':
             self._events[self._count][self._flag] = data
