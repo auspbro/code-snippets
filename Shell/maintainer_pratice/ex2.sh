@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORK_DIR=/oldboy/
+WORK_DIR=oldboy
 
 create(){
     i=1
@@ -18,7 +18,7 @@ check(){
     else
         mkdir $WORK_DIR
         create
-    fi
+    fi  
 }
 
 check
