@@ -1,2 +1,0 @@
-::Òþ²ØÔËÐÐ
-if not "%1"=="wind" mshta vbscript:createobject("wscript.shell").run("""%~nx0"" wind",vbhide)(window.close)&&exit

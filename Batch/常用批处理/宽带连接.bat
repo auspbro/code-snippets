@@ -1,1 +1,0 @@
-c:\windows\system32\rasdial 宽带连接名 用户名 密码

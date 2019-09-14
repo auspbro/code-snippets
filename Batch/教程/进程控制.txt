@@ -1,4 +1,0 @@
-@echo off
-tasklist | find /i "qq.exe" && taskkill /f /im qq.exe || echo 你开了QQ?我不信
-pause
-
