@@ -14,5 +14,5 @@ height = raw_input("input:")
 print "How much do you weigh?", 
 weight = raw_input()
 
-print "So, you're %r old, %r tall and %r heavy." % (age, height, weight)
-print u"所以，你是 %s old, %s tall and %s heavy." % (age, height, weight)
+print "So, you're %r year old, %r tall and %r heavy." % (age, height, weight)
+print u"所以，你是 %s 岁, 身高 %s 厘米和体重 %s 斤." % (age, height, weight)
